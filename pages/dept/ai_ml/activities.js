@@ -46,17 +46,17 @@ function activities({
 
 export async function getStaticProps() {
   const iv = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ind_visits/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ind_visits/36"
   );
   const ivJson = await iv.json();
 
   const ssw = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ssw_fdp/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ssw_fdp/36"
   );
   const sswJson = await ssw.json();
 
   const seo = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/events_org/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/events_org/36"
   );
   const seoJson = await seo.json();
 
@@ -76,12 +76,12 @@ export async function getStaticProps() {
   const s_mJson = await s_m.json();
 
   const l_e = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/36"
   );
   const l_eJson = await l_e.json();
 
   const l_n = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/36"
   );
   const l_nJson = await l_n.json();
 

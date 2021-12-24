@@ -46,17 +46,17 @@ function achievements({
 
 export async function getStaticProps() {
   const res = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/achievements/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/achievements/35"
   );
   const json = await res.json();
 
   const fa = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/faculty_achievements/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/faculty_achievements/35"
   );
   const fa_json = await fa.json();
 
   const patent = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/patents/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/patents/35"
   );
   const patent_json = await patent.json();
 
@@ -76,12 +76,12 @@ export async function getStaticProps() {
   const s_mJson = await s_m.json();
 
   const l_e = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/35"
   );
   const l_eJson = await l_e.json();
 
   const l_n = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/35"
   );
   const l_nJson = await l_n.json();
 
