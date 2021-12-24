@@ -14,7 +14,11 @@ function bos({ bos, sy, tt, sm, latestNews, latestEvents, deptStats }) {
       </Head>
       <div className="font-body">
         <Header />
-        <DeptBanner latestNews={latestNews} latestEvents={latestEvents} />
+        <DeptBanner
+          latestNews={latestNews}
+          latestEvents={latestEvents}
+          deptName="DEPARTMENT OF ARTIFICIAL INTELLIGENCE & DATA SCIENCE"
+        />
         <DeptStats stats={deptStats} />
         <BosMainContent
           data={bos}

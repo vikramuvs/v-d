@@ -24,7 +24,11 @@ function activities({
       </Head>
       <div className="font-body">
         <Header />
-        <DeptBanner latestNews={latestNews} latestEvents={latestEvents} />
+        <DeptBanner
+          latestNews={latestNews}
+          latestEvents={latestEvents}
+          deptName="DEPARTMENT OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"
+        />
         <DeptStats stats={deptStats} />
         <ActivitiesContent
           ivData={ind_visits}

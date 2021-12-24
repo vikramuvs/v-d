@@ -1,9 +1,9 @@
-import FacultyMainContent from "../../../components/FacultyMainContent";
+import FacultyMainContent from "../../../../components/FacultyMainContent";
 import Head from "next/head";
-import DeptBanner from "../../../components/DeptBanner";
-import Header from "../../../components/Header";
-import DeptStats from "../../../components/DeptStats";
-import Footer from "../../../components/Footer";
+import DeptBanner from "../../../../components/DeptBanner";
+import Header from "../../../../components/Header";
+import DeptStats from "../../../../components/DeptStats";
+import Footer from "../../../../components/Footer";
 import FacultyDetails from "../../../../components/FacultyDetails";
 
 function deptFaculty({

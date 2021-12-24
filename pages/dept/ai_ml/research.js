@@ -22,7 +22,11 @@ function faculty({
       </Head>
       <div className="font-body">
         <Header />
-        <DeptBanner latestNews={latestNews} latestEvents={latestEvents} />
+        <DeptBanner
+          latestNews={latestNews}
+          latestEvents={latestEvents}
+          deptName="DEPARTMENT OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"
+        />
         <DeptStats stats={deptStats} />
         <ResearchMainContent
           data={research}

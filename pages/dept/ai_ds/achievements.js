@@ -24,7 +24,11 @@ function achievements({
       </Head>
       <div className="font-body">
         <Header />
-        <DeptBanner latestNews={latestNews} latestEvents={latestEvents} />
+        <DeptBanner
+          latestNews={latestNews}
+          latestEvents={latestEvents}
+          deptName="DEPARTMENT OF ARTIFICIAL INTELLIGENCE & DATA SCIENCE"
+        />
         <DeptStats stats={deptStats} />
         <AchievementsContent
           st_achieve={stu_achievements}
