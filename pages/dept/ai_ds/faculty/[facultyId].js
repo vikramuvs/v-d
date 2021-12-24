@@ -81,7 +81,7 @@ export async function getStaticPaths() {
 
   // Get the paths we want to pre-render based on posts
   const paths = deptIds.map((deptId) => ({
-    params: { id: deptId.id },
+    params: { facultyId: deptId.id },
   }));
 
   // We'll pre-render only these paths at build time.
