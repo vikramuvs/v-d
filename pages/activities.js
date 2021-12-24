@@ -5,17 +5,19 @@ import Header from "../components/Header";
 import DeptStats from "../components/DeptStats";
 import Footer from "../components/Footer";
 
-function activities({
-  // ind_visits,
-  // ssw_fdp,
-  // seo,
-  // sy,
-  // tt,
-  // sm,
-  // latestNews,
-  // latestEvents,
-  // deptStats,
-}) {
+function activities(
+  {
+    // ind_visits,
+    // ssw_fdp,
+    // seo,
+    // sy,
+    // tt,
+    // sm,
+    // latestNews,
+    // latestEvents,
+    // deptStats,
+  }
+) {
   return (
     <>
       <Head>
@@ -101,6 +103,6 @@ function activities({
 //       deptStats: d_sJson,
 //     }, // will be passed to the page component as props
 //   };
-}
+//}
 
 export default activities;
