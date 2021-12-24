@@ -6,15 +6,15 @@ import DeptStats from "../components/DeptStats";
 import Footer from "../components/Footer";
 
 function achievements({
-  stu_achievements,
-  fac_achievements,
-  patents,
-  sy,
-  tt,
-  sm,
-  latestNews,
-  latestEvents,
-  deptStats,
+  // stu_achievements,
+  // fac_achievements,
+  // patents,
+  // sy,
+  // tt,
+  // sm,
+  // latestNews,
+  // latestEvents,
+  // deptStats,
 }) {
   return (
     <>
@@ -40,67 +40,67 @@ function achievements({
   );
 }
 
-export async function getStaticProps() {
-  const res = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/achievements/"
-  );
-  const json = await res.json();
+// export async function getStaticProps() {
+//   const res = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/achievements/"
+//   );
+//   const json = await res.json();
 
-  const fa = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/faculty_achievements/"
-  );
-  const fa_json = await fa.json();
+//   const fa = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/faculty_achievements/"
+//   );
+//   const fa_json = await fa.json();
 
-  const patent = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/patents/"
-  );
-  const patent_json = await patent.json();
+//   const patent = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/patents/"
+//   );
+//   const patent_json = await patent.json();
 
-  const syl = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/syllabus/1"
-  );
-  const syllJson = await syl.json();
+//   const syl = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/syllabus/1"
+//   );
+//   const syllJson = await syl.json();
 
-  const t_t = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/timetable/1"
-  );
-  const t_tJson = await t_t.json();
+//   const t_t = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/timetable/1"
+//   );
+//   const t_tJson = await t_t.json();
 
-  const s_m = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/studymat/1"
-  );
-  const s_mJson = await s_m.json();
+//   const s_m = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/studymat/1"
+//   );
+//   const s_mJson = await s_m.json();
 
-  const l_e = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
-  );
-  const l_eJson = await l_e.json();
+//   const l_e = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
+//   );
+//   const l_eJson = await l_e.json();
 
-  const l_n = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
-  );
-  const l_nJson = await l_n.json();
+//   const l_n = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
+//   );
+//   const l_nJson = await l_n.json();
 
-  const dep_stat = await fetch(
-    "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/dept_stats/"
-  );
-  const d_sJson = await dep_stat.json();
-  //const json = await res.json();
-  //console.log(res);
+//   const dep_stat = await fetch(
+//     "http://ec2-54-214-223-171.us-west-2.compute.amazonaws.com:8080/api/v1/dept_stats/"
+//   );
+//   const d_sJson = await dep_stat.json();
+//   //const json = await res.json();
+//   //console.log(res);
 
-  return {
-    props: {
-      stu_achievements: json,
-      fac_achievements: fa_json,
-      patents: patent_json,
-      sy: syllJson,
-      sm: s_mJson,
-      tt: t_tJson,
-      latestNews: l_nJson,
-      latestEvents: l_eJson,
-      deptStats: d_sJson,
-    }, // will be passed to the page component as props
-  };
+//   return {
+//     props: {
+//       stu_achievements: json,
+//       fac_achievements: fa_json,
+//       patents: patent_json,
+//       sy: syllJson,
+//       sm: s_mJson,
+//       tt: t_tJson,
+//       latestNews: l_nJson,
+//       latestEvents: l_eJson,
+//       deptStats: d_sJson,
+//     }, // will be passed to the page component as props
+//   };
 }
 
 export default achievements;
