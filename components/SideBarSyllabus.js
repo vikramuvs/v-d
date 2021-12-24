@@ -1,7 +1,7 @@
 function SideBarSyllabus({ syllabus }) {
   return (
     <ul className="list-none">
-      {syllabus.map((syl, id) => {
+      {syllabus?.map((syl, id) => {
         return (
           <li key={id}>
             {" "}
