@@ -105,13 +105,13 @@ function LatestNews({ data }) {
               >
                 <div className="w-[15%] mr-2 bg-gradient-to-b from-orange-ramaiah to-pink-ramaiah text-white flex flex-col space-y-1 text-center rounded-md">
                   <div className="font-bold font-heading text-xl">
-                    {item.publishedDate.substring(8, 10)}
+                    {item.publishedDate?.substring(8, 10)}
                   </div>
                   <div className="">
                     {" "}
-                    {renderMonth(item.publishedDate.substring(5, 7))}
+                    {renderMonth(item.publishedDate?.substring(5, 7))}
                   </div>
-                  <div className="">{item.publishedDate.substring(0, 4)}</div>
+                  <div className="">{item.publishedDate?.substring(0, 4)}</div>
                 </div>
                 <div className="w-[83%]">
                   <a href={item.linkURL}> {item.title}</a>

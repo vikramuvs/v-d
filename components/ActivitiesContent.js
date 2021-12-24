@@ -76,7 +76,7 @@ export default function ActivitiesContent({
                     {iv.industry_visited}
                   </div>
                   <div className="text-right text-black place-self-end flex-shrink text-lg">
-                    {iv.date.substring(0, 10)}
+                    {iv.date?.substring(0, 10)}
                   </div>
                 </div>
               );

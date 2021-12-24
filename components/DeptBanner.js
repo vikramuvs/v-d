@@ -61,7 +61,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
               <div className="w-1/2 lg:w-1/2 lg:mr-2">
                 <span className="text-xl font-heading ">LATEST NEWS</span>
                 <div className="bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah text-white rounded-t-md">
-                  {latestNews.map((newsItem, i) => {
+                  {latestNews?.map((newsItem, i) => {
                     return (
                       <>
                         <span key={i} className="font-heading lg:text-2xl">
@@ -78,7 +78,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
                   })}
                 </div>
                 <div className="border-b-[1px] border-l-[1px] border-r-[1px] border-gray-500 bg-white rounded-b-md ">
-                  {latestNews.map((newsItem, i) => {
+                  {latestNews?.map((newsItem, i) => {
                     return (
                       <div key={i}>
                         <a href={newsItem.linkURL}> {newsItem.title}</a>
@@ -90,7 +90,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
               <div className="w-1/2 lg:w-1/2">
                 <span className="text-xl font-heading">LATEST EVENTS</span>
                 <div className="bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah text-white rounded-t-md">
-                  {latestEvents.map((eventItem, i) => {
+                  {latestEvents?.map((eventItem, i) => {
                     return (
                       <>
                         <span key={i} className="font-heading lg:text-2xl">
@@ -110,7 +110,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
                   })}
                 </div>
                 <div className="border-b-[1px] border-l-[1px] border-r-[1px] border-gray-500 bg-white rounded-b-md">
-                  {latestEvents.map((eventItem, i) => {
+                  {latestEvents?.map((eventItem, i) => {
                     return (
                       <div key={i}>
                         <a href={eventItem.linkURL}> {eventItem.title}</a>
