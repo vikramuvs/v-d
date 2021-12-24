@@ -46,47 +46,47 @@ function activities({
 
 export async function getStaticProps() {
   const iv = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/ind_visits/9"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ind_visits/9"
   );
   const ivJson = await iv.json();
 
   const ssw = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/ssw_fdp/9"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/ssw_fdp/9"
   );
   const sswJson = await ssw.json();
 
   const seo = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/events_org/9"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/events_org/9"
   );
   const seoJson = await seo.json();
 
   const syl = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/syllabus/1"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/syllabus/1"
   );
   const syllJson = await syl.json();
 
   const t_t = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/timetable/1"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/timetable/1"
   );
   const t_tJson = await t_t.json();
 
   const s_m = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/studymat/1"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/studymat/1"
   );
   const s_mJson = await s_m.json();
 
   const l_e = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
   );
   const l_eJson = await l_e.json();
 
   const l_n = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_news/"
   );
   const l_nJson = await l_n.json();
 
   const dep_stat = await fetch(
-    "http://ec2-52-39-2-31west-2.compute.amazonaws.com:8080/api/v1/dept_stats/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/dept_stats/"
   );
   const d_sJson = await dep_stat.json();
   //const json = await res.json();
