@@ -89,7 +89,9 @@ export default function FacultyDetails({
                 <div className="flex flex-row flex-wrap gap-4 justify-between">
                   <p className="leading-relaxed italic font-bold">
                     Email:{" "}
-                    <span className="font-normal">{data[0]?.email_Address}</span>
+                    <span className="font-normal">
+                      {data[0]?.email_Address}
+                    </span>
                   </p>
                   <p className="leading-relaxed italic font-bold">
                     Phone:{" "}
@@ -149,7 +151,8 @@ export default function FacultyDetails({
                               </td>
                               <td class="text-sm text-gray-900 font-light px-6 py-4 ">
                                 {
-                                  data[0]?.university_from_which_Degree_1_was_obtained
+                                  data[0]
+                                    ?.university_from_which_Degree_1_was_obtained
                                 }
                               </td>
                             </tr>
@@ -162,7 +165,8 @@ export default function FacultyDetails({
                               </td>
                               <td class="text-sm text-gray-900 font-light px-6 py-4 ">
                                 {
-                                  data[0]?.university_from_which_Degree_2_was_obtained
+                                  data[0]
+                                    ?.university_from_which_Degree_2_was_obtained
                                 }
                               </td>
                             </tr>
@@ -175,7 +179,8 @@ export default function FacultyDetails({
                               </td>
                               <td class="text-sm text-gray-900 font-light px-6 py-4 ">
                                 {
-                                  data[0]?.university_from_which_Degree_3_was_obtained
+                                  data[0]
+                                    ?.university_from_which_Degree_3_was_obtained
                                 }
                               </td>
                             </tr>
@@ -188,7 +193,8 @@ export default function FacultyDetails({
                               </td>
                               <td class="text-sm text-gray-900 font-light px-6 py-4 ">
                                 {
-                                  data[0]?.university_from_which_Degree_4_was_obtained
+                                  data[0]
+                                    ?.university_from_which_Degree_4_was_obtained
                                 }
                               </td>
                             </tr>
@@ -201,7 +207,8 @@ export default function FacultyDetails({
                               </td>
                               <td class="text-sm text-gray-900 font-light px-6 py-4 ">
                                 {
-                                  data[0]?.university_from_which_Degree_5_was_obtained
+                                  data[0]
+                                    ?.university_from_which_Degree_5_was_obtained
                                 }
                               </td>
                             </tr>
@@ -486,7 +493,8 @@ export default function FacultyDetails({
                 Honours & Achievements
               </div> */}
               {/* <hr className="border-blue-ramaiah text-justify " /> */}
-              {data[0]?.do_you_have_honors_awards_and_achievements === "Yes" && (
+              {data[0]?.do_you_have_honors_awards_and_achievements ===
+                "Yes" && (
                 <>
                   <div className="font-heading text-2xl mb-2 text-blue-ramaiah">
                     Honours & Achievements
@@ -538,8 +546,8 @@ export default function FacultyDetails({
             <div className="mb-2">
               {" "}
               {/* <hr className="border-gray-400 text-justify " /> */}
-              {data[0]?
-                .have_you_attended_any_workshops_or_delivered_guest_lectures ===
+              {data[0]
+                ?.have_you_attended_any_workshops_or_delivered_guest_lectures ===
                 "Yes" && (
                 <>
                   {" "}
