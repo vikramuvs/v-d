@@ -20,7 +20,7 @@ function activities(
 ) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Ramaiah Institute of Technology, Bengaluru - 54</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,7 +37,7 @@ function activities(
           studymaterial={sm}
         />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

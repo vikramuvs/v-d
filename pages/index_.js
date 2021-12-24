@@ -16,11 +16,10 @@ export default function Index_({
 }) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Ramaiah Institute of Technology, Bengaluru - 54</title>
         <link rel="icon" href="/favicon.ico" />
-        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> */}
+      
       </Head>
       <div className="font-body antialiased">
         <Header />
@@ -37,7 +36,7 @@ export default function Index_({
           studymaterial={sm}
         />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

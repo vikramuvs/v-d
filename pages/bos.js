@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 function bos() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Ramaiah Institute of Technology, Bengaluru - 54</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -24,7 +24,7 @@ function bos() {
           studymaterial={sm}
         />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

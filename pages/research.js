@@ -18,7 +18,7 @@ function faculty(
 ) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Ramaiah Institute of Technology, Bengaluru - 54</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -33,7 +33,7 @@ function faculty(
           studymaterial={sm}
         />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }
