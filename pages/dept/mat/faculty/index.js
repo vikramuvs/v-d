@@ -89,7 +89,7 @@ export async function getStaticProps() {
   // console.log();
 
   const res = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/fd_responses/dept/l13"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/fd_responses/dept/13"
   );
   const json = await res.json();
 
