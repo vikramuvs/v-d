@@ -64,7 +64,7 @@ export async function getStaticProps() {
   //   const s_mJson = await s_m.json();
 
   const l_e = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/all"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/latest_events/"
   );
   const l_eJson = await l_e.json();
 
