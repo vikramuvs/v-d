@@ -70,16 +70,16 @@ function FacilitiesInternet() {
             <p className="">
               Network and Internet Center is where all the important servers are
               located in a safe and secure place. The data center is
-              air-conditioned with adequate power backuInternet Gateway is also
-              located herThe institute has an Internet connection of 100Mbps at
-              1:1 compression on fiber handouThe internet connection is
-              controlled and regulated by using a UTM device contains an
-              antivirus and antispam database. Some of the important servers in
-              NIC are
+              air-conditioned with adequate power backup. Internet Gateway is
+              also located here. The institute has an Internet connection of
+              1800Mbps at 1:1 compression on fiber handout. The internet
+              connection is controlled and regulated by using a UTM device,
+              contains an antivirus and antispam database. Some of the important
+              servers in NIC are
             </p>
           </div>
           <ol className="list-decimal ml-7">
-            <li>Web Server </li>
+            <li>Web Servers </li>
 
             <li>Student Information System </li>
 

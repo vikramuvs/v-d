@@ -18,7 +18,7 @@ function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  className="hover:text-orange-ramaiah   antialiased"
+                  className="hover:text-orange-ramaiah antialiased"
                   target="_blank"
                   href="/support/qip"
                 >
@@ -128,7 +128,7 @@ function Footer() {
                 <a
                   className="hover:text-orange-ramaiah  "
                   target="_blank"
-                  href="support/spdc"
+                  href="/support/spdc"
                 >
                   SPDC
                 </a>

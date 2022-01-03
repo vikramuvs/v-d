@@ -28,7 +28,7 @@ export default function FacultyMainContent({
             </a>
             <a
               href="faculty"
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:text-white lg:p-2 lg:m-2 lg:bg-gradient-to-r lg:from-pink-ramaiah lg:to-orange-ramaiah"
             >
               Faculty
             </a>
@@ -69,21 +69,30 @@ export default function FacultyMainContent({
             return (
               <div
                 key={profile.id}
-                className="rounded-sm border-gray-400 flex items-center bg-gray-deptHeader space-x-2 mb-6 shadow-md p-4"
+                className="rounded-sm border-gray-400 flex items-start bg-gray-deptHeader space-x-2 mb-6 shadow-md p-4"
               >
-                <div className="min-w-[17%] max-w-[20%] shadow-2xl">
+                <div className="min-w-[17%] max-w-[20%] lg:w-[200px] shadow-2xl">
                   <img
-                    className="border-pink-ramaiah border-[1px]"
+                    className="border-pink-ramaiah border-[1px] object-center w-full"
                     src={profile.profile_Pic_URL}
                   />
                 </div>
 
                 <div className="">
-                  <a href={router.pathname + "/" + profile.id}>
-                    <h2 className="font-heading text-pink-ramaiah pb-2 text-xl ">
-                      {profile.faculty_Full_Name}
-                    </h2>
-                  </a>
+                  <div className="flex flex-row flex-wrap justify-between">
+                    <a href={router.pathname + "/" + profile.id}>
+                      <h2 className="font-heading text-pink-ramaiah pb-2 text-xl ">
+                        {profile.faculty_Full_Name}
+                      </h2>
+                    </a>
+
+                    {profile.facultyId == 1 && (
+                      <p className="p-2 text-gray-900 border-[1px] rounded-md border-blue-ramaiah shadow-lg">
+                        {" "}
+                        Head of the Department
+                      </p>
+                    )}
+                  </div>
                   <p className="">{profile.short_Bio}</p>
                 </div>
               </div>

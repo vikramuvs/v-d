@@ -17,7 +17,12 @@ export default function Header() {
               <div className="flex flex-row justify-between items-center content-center">
                 <div className="hidden lg:inline-block lg:h-5/6 lg:w-auto ">
                   <a href="/home">
-                    <Image src={logo} alt="Logo" layout="fixed" />
+                    <img
+                      src="/Institute-of-Technology-transparent-bkg.png"
+                      alt="Logo"
+                      layout="fixed"
+                      className="h-[90px] py-2"
+                    />
                   </a>
                 </div>
                 <div className="h-20 w-[10rem] lg:hidden relative">
@@ -31,7 +36,7 @@ export default function Header() {
                   </a>
                 </div>
                 {/* <nav className="w-auto p-2 bg-gray-menu bg-opacity-50 space-x-4 text-base text-white hidden lg:inline-flex lg:relative"> */}
-                <nav className="space-x-6 bg-gray-menu bg-opacity-50 p-2 box-border text-white  items-center hidden lg:inline-flex lg:relative ">
+                <nav className="space-x-4 bg-gray-menu bg-opacity-50 p-2 box-border text-white  items-center hidden lg:inline-flex lg:relative ">
                   <div className="inline-block relative">
                     <a
                       className="sm:hover:font-bold p-2 cursor-pointer"
@@ -207,11 +212,11 @@ export default function Header() {
                         !menuItemCLicked ? "lg:hidden " : "lg:flex lg:flex-col"
                       }`}
                     >
-                      <div className="relative">
-                        <div className="flex flex-row gap-0 items-center mb-2 w-full">
-                          <div>
+                      <div className="relative w-[180px]">
+                        <div className="flex flex-row items-center mb-2 w-full">
+                          <div className="w-full flex-grow inline-flex">
                             <a
-                              className={`p-2 cursor-default w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah ${
+                              className={`p-2 cursor-default min-w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah ${
                                 deptItemClicked
                                   ? "lg:rounded-lg lg:bg-gradient-to-r lg:from-pink-ramaiah "
                                   : " "
@@ -230,7 +235,7 @@ export default function Header() {
                               Departments{" "}
                             </a>{" "}
                           </div>
-                          <div className="">
+                          <div className="ml-auto">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -268,55 +273,55 @@ export default function Header() {
                           {" "}
                           <div>
                             <a
-                              className=" cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ar"
                             >
                               Architecture
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="#"
                             >
                               Artificial Intelligence & Data Science
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="#"
                             >
                               Artificial Intelligence & Machine Learning
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/bt"
                             >
                               Biotechnology
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ch"
                             >
                               Chemical Engineering
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/cv"
                             >
                               Civil Engineering
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/cse"
                             >
                               Computer Science & Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="#"
                             >
                               Computer Science & Engg. (AI & ML)
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="#"
                             >
                               Computer Science & Engg. (Cyber Security)
@@ -324,51 +329,51 @@ export default function Header() {
                             {/* </div>
                       <div className="min-w-1/2"> */}{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/eee"
                             >
                               Electrical & Electronics Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ece"
                             >
                               {" "}
                               Electronics & Communications Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/eie"
                             >
                               {" "}
                               Electronics & Instrumentation Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ete"
                             >
                               Electronics & Telecommunications Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/iem"
                             >
                               Industrial Engineering & Mgmt
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ise"
                             >
                               Information Science & Engg.
                             </a>{" "}
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/mech"
                             >
                               Mechanical Engineering
                             </a>
                             <a
-                              className=" lg:cursor-pointer lg:block lg:pb-1 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/ml"
                             >
                               Medical Electronics Engg.
@@ -524,7 +529,7 @@ export default function Header() {
                   </a>
                   <a
                     className="sm:hover:font-bold p-2"
-                    href="/skill_labs"
+                    href="http://msrit.edu/skill-labs.html"
                     onMouseOver={() => {
                       setFaciltiesItemClicked(false);
                       setDeptItemClicked(false);

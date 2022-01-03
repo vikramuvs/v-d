@@ -20,7 +20,7 @@ export default function BosMainContent({
         <div className="col-span-full h-8 bg-opacity-30 border-[1px] place-self-start lg:sticky lg:top-10 border-blue-ramaiah rounded-md text-blue-ramaiah space-x-3 mx-auto lg:col-start-2 lg:col-end-4 lg:inline-flex lg:flex-col lg:h-auto lg:w-full">
           <div className="lg:w-full lg:flex lg:flex-col text-center">
             <a
-              href="/"
+              href="./"
               className="lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah active:bg-opacity-100 bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
               Overview
@@ -39,7 +39,7 @@ export default function BosMainContent({
             </a>
             <a
               href="bos"
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:text-white lg:p-2 lg:m-2 lg:bg-gradient-to-r lg:from-pink-ramaiah lg:to-orange-ramaiah"
             >
               BOS|BOE
             </a>
@@ -87,7 +87,7 @@ export default function BosMainContent({
                 <div className="flex-grow-1 min-w-[75%] max-w-[75%]">
                   {bos.designation}
                 </div>
-                <div className="flex-grow-0 min-w-[15%] max-w-[15%] content-end">
+                <div className="flex-grow-0 min-w-[12%] max-w-[12%] truncate">
                   {bos.ug_PG}
                 </div>
               </div>

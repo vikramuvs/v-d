@@ -19,6 +19,10 @@ function DeptMainContent({
   const [pg, setPg] = useState(false);
   const [hod, setHod] = useState(false);
 
+  const router = useRouter();
+
+  const pathLocal = router.pathname;
+  console.log(pathLocal);
   // console.log(data);
 
   return (
@@ -35,31 +39,51 @@ function DeptMainContent({
             </a>
             <a
               href={path + "/faculty"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className={`sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2 ${
+                pathLocal.contains("faculty")
+                  ? "lg:active:bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah"
+                  : " "
+              }`}
             >
               Faculty
             </a>
             <a
               href={path + "/research"}
-              className="lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className={`lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2 ${
+                pathLocal.contains("research")
+                  ? "lg:active:bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah"
+                  : " "
+              }`}
             >
               Research
             </a>
             <a
               href={path + "/bos"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className={`sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2 ${
+                pathLocal.contains("bos")
+                  ? "lg:active:bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah"
+                  : " "
+              }`}
             >
               BOS|BOE
             </a>
             <a
               href={path + "/achievements"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className={`sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2 ${
+                pathLocal.contains("achievements")
+                  ? "lg:active:bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah"
+                  : " "
+              }`}
             >
               Achievements
             </a>
             <a
               href={path + "/activities"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className={`sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2 ${
+                pathLocal.contains("activities")
+                  ? "lg:active:bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah"
+                  : " "
+              }`}
             >
               Activities
             </a>

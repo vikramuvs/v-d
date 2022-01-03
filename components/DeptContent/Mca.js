@@ -29,7 +29,7 @@ export default function Mca({
           <div className="lg:w-full lg:flex lg:flex-col text-center">
             <a
               href={path}
-              className="lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah active:bg-opacity-100 bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="lg:hover:text-white lg:text-white lg:p-2 lg:m-2 lg:bg-gradient-to-r lg:from-pink-ramaiah lg:to-orange-ramaiah"
             >
               Overview
             </a>

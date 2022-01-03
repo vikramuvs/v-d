@@ -4,6 +4,7 @@ import Header from "../../../components/Header";
 import DeptStats from "../../../components/DeptStats";
 import Footer from "../../../components/Footer";
 import ResearchMainContent from "../../../components/ResearchMainContent";
+import { useRouter } from "next/router";
 
 function faculty({
   research,
@@ -14,6 +15,7 @@ function faculty({
   latestEvents,
   deptStats,
 }) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -33,6 +35,7 @@ function faculty({
           syllabus={sy}
           timetable={tt}
           studymaterial={sm}
+          path={router.pathname}
         />
         <Footer />
       </div>
@@ -72,7 +75,7 @@ export async function getStaticProps() {
   const l_nJson = await l_n.json();
 
   const dep_stat = await fetch(
-    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/dept_stats/"
+    "http://ec2-52-39-2-31.us-west-2.compute.amazonaws.com:8080/api/v1/dept_stats/16"
   );
   const d_sJson = await dep_stat.json();
   //const json = await res.json();

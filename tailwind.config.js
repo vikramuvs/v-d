@@ -1,3 +1,4 @@
+const tailwindcss = require("tailwindcss");
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
@@ -54,5 +55,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

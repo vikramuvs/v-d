@@ -12,6 +12,7 @@ function Governance() {
   const mrrRef = useRef(null);
   const ceRef = useRef(null);
   const nvrRef = useRef(null);
+  const rajRef = useRef(null);
 
   //   btn.onclick = function () {
   //     modal.style.display = "block";
@@ -232,7 +233,40 @@ function Governance() {
             </div>
             <br />
             <div className="font-heading text-lg"> LEADERSHIP</div> <br />
-            <div className="flex flex-row flex-wrap space-x-12 justify-start">
+            <div className="flex flex-row flex-wrap space-x-8 justify-start">
+              <div className="leading-tight">
+                <img src="../../razdan.jpg" className="w-[250px] h-[180px]" />
+                <br />
+                {/* <p className="italic font-bold">Dr. N. V. R. Naidu</p> */}
+                <button
+                  type="button"
+                  className="px-6
+      py-2.5
+      bg-blue-600
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      uppercase
+      rounded
+      shadow-md
+      hover:bg-blue-700 hover:shadow-lg
+      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg
+      transition
+      duration-150
+      ease-in-out"
+                  onClick={() => {
+                    rajRef.current.style.display = "block";
+                  }}
+                >
+                  Dr. P. N. Razdan
+                </button>
+                <p className="text-sm">Principal Advisor</p>
+                <p className="text-sm">
+                  Quality Assurance & Excellence Cell, GEF{" "}
+                </p>
+              </div>
               <div className="leading-tight">
                 <img src="../../new-ce.jpg" className="w-[250px] h-[180px]" />{" "}
                 <br />
@@ -306,7 +340,7 @@ function Governance() {
           id="my-modal"
           ref={mrjRef}
         >
-          <div className="relative top-20 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -425,7 +459,7 @@ function Governance() {
           id="my-modal"
           ref={mrsRef}
         >
-          <div className="relative top-20 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -523,7 +557,7 @@ function Governance() {
           id="my-modal"
           ref={mrrRef}
         >
-          <div className="relative top-20 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -618,7 +652,7 @@ function Governance() {
           id="my-modal"
           ref={ceRef}
         >
-          <div className="relative top-20 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -782,7 +816,7 @@ function Governance() {
           id="my-modal"
           ref={nvrRef}
         >
-          <div className="relative top-20 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -906,6 +940,123 @@ function Governance() {
             </div>
           </div>
         </div>
+
+        <div
+          class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+          id="my-modal"
+          ref={rajRef}
+        >
+          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+            <div className="mt-3 text-center">
+              {/* <div className="items-end px-4 py-3">
+                      <button
+                        onClick={() => {
+                          modalRef.current.style.display = "none";
+                        }}
+                        id="ok-btn"
+                        className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      >
+                        OK
+                      </button>
+                    </div> */}
+              <div className="bg-star bg-repeat">
+                <div>
+                  <p
+                    className="text-right cursor-pointer"
+                    onClick={() => {
+                      rajRef.current.style.display = "none";
+                    }}
+                  >
+                    Close
+                  </p>
+                </div>
+                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                  <div>
+                    <img src="../../razdan.jpg" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-3xl text-left">
+                      Dr. P.N Razdan
+                    </p>
+                    <p className="text-sm text-left">Principal Advisor</p>
+                    <p className="text-sm text-left">
+                      Quality Assurance & Excellence Cell, GEF
+                    </p>
+                  </div>
+                </div>{" "}
+                <br />
+                <p className="text-justify border-l-2 border-blue-ramaiah pl-2">
+                  Dr. Pushpati Nath Razdan was born at Srinagar on 25th Dec.
+                  1948. He got his M. Sc degree from University of Kashmir in
+                  1971 and PhD degree from University of Roorkee in 1975. He was
+                  appointed as Assistant Professor at H.P. Agriculture
+                  University Solan. Dr. Razdan joined Geological Survey of India
+                  in 1983. He was appointed as Dy. Director General
+                  (Geochemistry) in Feb.2005 and Sr. Dy. Director General in Feb
+                  2008. As Deputy Director General and HOD NR, GSI, Ministry of
+                  Mines, GOI, for more than three years, he looked after all the
+                  geoscientific activities of Northern India.
+                </p>{" "}
+                <br />{" "}
+                <p className="text-justify border-l-2 border-blue-ramaiah pl-2">
+                  {" "}
+                  Dr. Razdan joined All India Council for Technical Education as
+                  Adviser-I in April 2001 and severed in AICTE up to Feb. 2005.
+                  He looked after various Bureaus, before joining as Advisor
+                  Quality Assurance (QA) and Member Secretary (NBA) in July
+                  2002. As Member Secretary of NBA, he was responsible for
+                  Awareness of accreditation throughout the country. His
+                  contribution towards NBA becoming member of Washington accord/
+                  INQQHAE / Asian Accord has been wide appreciated. Application
+                  for membership of Washington accord was submitted by Dr.
+                  Razdan at New Zeeland in 2004. He was main architect for
+                  initial drafting of Regulations for "Entry & Operation of
+                  Foreign University /Institutions intending/intend to impart
+                  Technical Education in India. He was member of several
+                  committees constituted by MHRD/UGC on different issues
+                  concerning higher & technical education.
+                </p>{" "}
+                <br />{" "}
+                <p className="text-justify border-l-2 border-blue-ramaiah pl-2">
+                  {" "}
+                  Dr. P. N. Razdan has published many research papers in various
+                  Journals of International repute. He was visiting faculty at
+                  Allahabad University and is also guest faculty at GSI Training
+                  Institute. He was awarded H. K. Sen. Memorial Medal in 2006 by
+                  Institution of Chemist. He was nominated as member of “High
+                  Power Committee on GSI” constituted by GOI. Ministry of Human
+                  Resource had appointed him as chairman of a Review Committee
+                  for evaluating the Ministry’s Schemes of Sub-Mission on
+                  Polytechnics.
+                </p>{" "}
+                <br />{" "}
+                <p className="text-justify border-l-2 border-blue-ramaiah pl-2">
+                  {" "}
+                  Dr. Razdan was Pro Vice Chancellor of KIIT University
+                  Bhubaneswar for about 2 Years, wherein he was overall
+                  responsible for various activities in seven independent
+                  Schools of Engineering. Dr P. N. Razdan joining Dr. D. Y.
+                  Patil Vidyapeeth Pune as Vice-Chancellor in 2010 and
+                  relinquished his assignment on 31th Dec 2018. He was
+                  responsible for leading, directing, and managing day-to-day
+                  academic and administrative operations of DPU along with
+                  providing strategic planning and leadership to the Vidyapeeth.
+                </p>{" "}
+                <br />{" "}
+                <p className="text-justify border-l-2 border-blue-ramaiah pl-2">
+                  {" "}
+                  Dr Pushpati Nath Razdan has joined Gokula Education
+                  Foundation, Bangalore as Principal Advisor, Quality Assurance
+                  and Excellence cell in January 2019 to look after total
+                  quality management of the institutions for national and
+                  international visibility, through accreditation, rating and
+                  ranking.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Dept Right Sidebar */}
         <div className="col-span-full lg:col-start-10 lg:col-end-12 h-auto lg:absolute lg:w-full text-blue-ramaiah"></div>
       </div>

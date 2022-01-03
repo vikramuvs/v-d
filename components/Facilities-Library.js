@@ -8,36 +8,36 @@ function FacilitiesLibrary() {
         <div className="col-span-full lg:sticky lg:top-10 place-self-start lg:rounded-lg lg:border-[1px] lg:border-blue-ramaiah  bg-opacity-30 text-blue-ramaiah space-x-3  lg:col-start-2 lg:col-end-4 lg:inline-flex lg:flex-col lg:w-full ">
           <div className="lg:w-full lg:flex lg:flex-col text-center h-auto">
             <a
-              href="#facilities"
+              href="#overview"
               className="lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah active:bg-opacity-100 bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
-              Facilites Provided
+              Overview
+            </a>
+            <a
+              href="#membership"
+              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+            >
+              Library Membership
+            </a>
+            <a
+              href="#charging"
+              className="lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+            >
+              Charging & Discharging
             </a>
             <a
               href="#rules"
               className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
-              Hostel Rules
+              Library Rules
             </a>
             <a
-              href="#general"
-              className="lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
-            >
-              General Guidelines
-            </a>
-            <a
-              href="#mess"
+              href="#links"
               className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
-              Mess Rules
+              Important Links
             </a>
-            <a
-              href="#charges"
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
-            >
-              Hostel Charges
-            </a>
-            <a
+            {/* <a
               href="#info"
               className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
@@ -54,13 +54,13 @@ function FacilitiesLibrary() {
               className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
             >
               Gallery
-            </a>
+            </a> */}
           </div>
         </div>
 
         {/* Dept Main Content*/}
         <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-blue-ramaiah border-gray-100 border-2 bg-white">
-          <div className="font-heading text-lg text-center" id="facilities">
+          <div className="font-heading text-lg text-center" id="overview">
             {" "}
             LIBRARY
           </div>{" "}
@@ -158,12 +158,12 @@ function FacilitiesLibrary() {
           <div className="text-justify">
             {" "}
             <p>
-              Library Membership All the students, faculty members and staff of
-              MSRIT and Research scholars of VTU (Visvesvaraya Technological
-              University, Belgaum), who are engaged in Research under the
-              faculty of MSRIT are users. Constituent colleges of GEF (GOKULA
-              EDUCATION FOUNDATION), a member of MSR Groups are eligible to
-              become members of MSRIT library.
+              All the students, faculty members and staff of MSRIT and Research
+              scholars of VTU (Visvesvaraya Technological University, Belgaum),
+              who are engaged in Research under the faculty of MSRIT are users.
+              Constituent colleges of GEF (GOKULA EDUCATION FOUNDATION), a
+              member of MSR Groups are eligible to become members of MSRIT
+              library.
             </p>
             <br />
             <div className="flex flex-col">
@@ -679,12 +679,12 @@ function FacilitiesLibrary() {
             </div>
           </div>{" "}
           <br />
-          <div
+          {/* <div
             className="font-heading text-lg text-center font-bold"
             id="gallery"
           >
             GALLERY
-          </div>{" "}
+          </div>{" "} */}
           <div>{/* Gallery */}</div>
         </div>
         {/* Dept Right Sidebar */}

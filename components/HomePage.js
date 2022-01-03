@@ -11,6 +11,8 @@ function HomePage({ latestNews, latestEvents }) {
   const [newsIndex, setNewsIndex] = useState(0);
   const [eventsIndex, setEventsIndex] = useState(0);
   const [menuItemCLicked, setMenuItemClicked] = useState(false);
+  const [faciltiesItemClicked, setFaciltiesItemClicked] = useState(false);
+  const [aboutItemClicked, setAboutItemClicked] = useState(false);
   const [deptItemClicked, setDeptItemClicked] = useState(false);
 
   const [NewsItems, setNewsItems] = useState([
@@ -46,8 +48,8 @@ function HomePage({ latestNews, latestEvents }) {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setNewsIndex(newsIndex + 1);
-      setEventsIndex(eventsIndex + 1);
+      setNewsIndex((newsIndex + 1) % 3);
+      setEventsIndex((eventsIndex + 1) % 3);
     }, 4000);
     return () => clearTimeout(intervalId);
   }, [newsIndex, eventsIndex]);
@@ -116,25 +118,31 @@ function HomePage({ latestNews, latestEvents }) {
                       <div className=" bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah text-white text-center">
                         <p className="text-4xl font-extrabold inline-block">
                           <ReactTextTransition
-                            text={NewsDates[
-                              newsIndex % NewsDates.length
-                            ].substr(0, 2)}
+                            // text={NewsDates[
+                            //   newsIndex % NewsDates.length
+                            // ].substr(0, 2)}
+                            text={NewsDates[newsIndex].substr(0, 2)}
                             overflow
                             inline
                           />
                         </p>
                         <span>
                           <ReactTextTransition
+                            // text={
+                            //   NewsDates[newsIndex % NewsDates.length].substr(
+                            //     3,
+                            //     3
+                            //   ) +
+                            //   " " +
+                            //   NewsDates[newsIndex % NewsDates.length].substr(
+                            //     7,
+                            //     4
+                            //   )
+                            // }
                             text={
-                              NewsDates[newsIndex % NewsDates.length].substr(
-                                3,
-                                3
-                              ) +
+                              NewsDates[newsIndex].substr(3, 3) +
                               " " +
-                              NewsDates[newsIndex % NewsDates.length].substr(
-                                7,
-                                4
-                              )
+                              NewsDates[newsIndex].substr(7, 4)
                             }
                             overflow
                             inline
@@ -142,12 +150,18 @@ function HomePage({ latestNews, latestEvents }) {
                         </span>
                       </div>
                       <div className="my-auto">
-                        <a
+                        {/* <a
                           href={newsItemURL[newsIndex % NewsDates.length]}
                           target="_blank"
                         >
                           <ReactTextTransition
                             text={NewsItems[newsIndex % NewsItems.length]}
+                            overflow
+                          />
+                        </a> */}
+                        <a href={newsItemURL[newsIndex]} target="_blank">
+                          <ReactTextTransition
+                            text={NewsItems[newsIndex]}
                             overflow
                           />
                         </a>
@@ -337,49 +351,43 @@ function HomePage({ latestNews, latestEvents }) {
         </div>
 
         <section className="min-w-[80%] flex items-center p-2 justify-between bg-transparent z-10 absolute top-0 left-[10%]">
-          <div className="relative lg:h-5/6 lg:w-auto">
+          <div className="relative lg:w-[300px] lg:h-[100px]">
             <a href="/home">
-              <Image
-                src={logo}
+              <img
+                src="../Institute-of-Technology.png"
                 alt="Logo"
-                layout="fixed"
-                className="absolute"
+                className="absolute h-full w-full"
               />
             </a>
           </div>
           <div className="text-white justify-end">
-            <nav className="space-x-6 bg-gray-menu bg-opacity-50 p-2 box-border ">
+            <nav className="space-x-4 bg-gray-menu bg-opacity-50 p-2 box-border ">
               {/* <a
                 className="p-2 border-b-2 border-orange-ramaiah text-blue-ramaiah font-bold"
                 href="home"
               >
                 Home
               </a> */}
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
-                About Us
-              </a>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
-                Admissions
-              </a>
               <div className="inline-block relative">
                 <a
-                  className="p-2 hover:font-bold"
+                  className="sm:hover:font-bold p-2 cursor-pointer"
                   onMouseOver={() => {
-                    setMenuItemClicked(!menuItemCLicked);
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
                     setDeptItemClicked(false);
+                    setAboutItemClicked(true);
                   }}
                   onClick={() => {
-                    setMenuItemClicked(!menuItemCLicked);
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
                     setDeptItemClicked(false);
+                    setAboutItemClicked(!aboutItemClicked);
                   }}
-                  // onMouseOut={() => {
-                  //   setMenuItemClicked(false);
-                  // }}
                 >
-                  Academics
+                  About Us
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 inline-block ml-1"
+                    className="h-5 w-5 inline-block ml-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -394,26 +402,155 @@ function HomePage({ latestNews, latestEvents }) {
                 </a>
 
                 <div
-                  className={`lg:absolute lg:top-10  lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-auto lg:p-2 lg:pt-0 lg:z-[5] ${
-                    !menuItemCLicked ? "lg:hidden" : "lg:flex"
+                  className={`lg:absolute lg:top-8 lg:-left-2 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !aboutItemClicked ? "lg:hidden" : "lg:flex"
+                  }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  <a
+                    href="/about"
+                    className="p-2  w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg    "
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href="/about#evolution"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Evolution
+                  </a>
+                  <a
+                    href="/about/governance"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Governance
+                  </a>
+                  {/* <a
+                        href="/facilities/fitness-center"
+                        className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                        onMouseOver={() => {
+                          setDeptItemClicked(false);
+                        }}
+                      >
+                       Board of Management
+                      </a> */}
+                  <a
+                    href="/about/other-committees"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Other Committees
+                  </a>
+                </div>
+              </div>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/admission"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+                onClick={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Admissions
+              </a>
+              <div className="inline-block relative">
+                <a
+                  className="sm:hover:font-bold p-2 cursor-pointer"
+                  onMouseOver={() => {
+                    setMenuItemClicked(!menuItemCLicked);
+                    setDeptItemClicked(false);
+                    setFaciltiesItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onClick={() => {
+                    setMenuItemClicked(!menuItemCLicked);
+                    setFaciltiesItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  Academics
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  className={`lg:absolute lg:top-8 lg:min-h-[100px] lg:bg-[#7c688d] lg:text-white lg:w-[205px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !menuItemCLicked ? "lg:hidden " : "lg:flex lg:flex-col"
                   }`}
                 >
-                  <div className="relative ">
-                    <div className="flex flex-row gap-0 items-center">
-                      <div>
+                  <div className="relative w-[180px]">
+                    <div className="flex flex-row items-center mb-2 w-full">
+                      <div className="w-full flex-grow inline-flex">
                         <a
-                          className="p-2 cursor-default"
+                          className={`p-2 cursor-default min-w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah ${
+                            deptItemClicked
+                              ? "lg:rounded-lg lg:bg-gradient-to-r lg:from-pink-ramaiah "
+                              : " "
+                          } `}
                           onMouseOver={() => {
+                            setFaciltiesItemClicked(false);
                             setDeptItemClicked(true);
+                            setAboutItemClicked(false);
                           }}
                           onClick={() => {
+                            setFaciltiesItemClicked(false);
                             setDeptItemClicked(!deptItemClicked);
+                            setAboutItemClicked(false);
                           }}
                         >
                           Departments{" "}
                         </a>{" "}
                       </div>
-                      <div className="">
+                      <div className="ml-auto">
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -435,67 +572,77 @@ function HomePage({ latestNews, latestEvents }) {
                     </div>
                     <div
                       onMouseOver={() => {
+                        setFaciltiesItemClicked(false);
                         setDeptItemClicked(true);
+                        setAboutItemClicked(false);
                       }}
                       onMouseOut={() => {
+                        setFaciltiesItemClicked(false);
                         setDeptItemClicked(false);
+                        setAboutItemClicked(false);
                       }}
-                      className={`lg:absolute lg:left-[110%] lg:top-0 lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
+                      className={`lg:absolute lg:left-[104%] lg:top-0 lg:max-h-[300px] lg:overflow-y-scroll lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
                         !deptItemClicked ? "lg:hidden" : "lg:flex"
                       }`}
                     >
                       {" "}
                       <div>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/ar/"
+                          className=" cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ar"
                         >
                           Architecture
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="#"
+                        >
+                          Artificial Intelligence & Data Science
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                           href="#"
                         >
                           Artificial Intelligence & Machine Learning
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="#"
-                        >
-                          Artificial Intelligence & Data Science
-                        </a>
-                        <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/bt/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/bt"
                         >
                           Biotechnology
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/ar/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ch"
                         >
                           Chemical Engineering
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/cv/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/chy"
+                        >
+                          Chemistry
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/cv"
                         >
                           Civil Engineering
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/cse/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/cse"
                         >
                           Computer Science & Engg.
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                           href="#"
                         >
                           Computer Science & Engg. (AI & ML)
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                           href="#"
                         >
                           Computer Science & Engg. (Cyber Security)
@@ -503,90 +650,243 @@ function HomePage({ latestNews, latestEvents }) {
                         {/* </div>
                       <div className="min-w-1/2"> */}{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/eee/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/eee"
                         >
                           Electrical & Electronics Engg.
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/ece/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ece"
                         >
                           {" "}
                           Electronics & Communications Engg.
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/eie/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/eie"
                         >
+                          {" "}
                           Electronics & Instrumentation Engg.
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/ete/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ete"
                         >
                           Electronics & Telecommunications Engg.
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/ise/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/hss"
                         >
-                          Information Science & Engg.
+                          Humanities
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/iem/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/iem"
                         >
                           Industrial Engineering & Mgmt
                         </a>{" "}
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-2"
-                          href="/dept/mech/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ise"
+                        >
+                          Information Science & Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/mat"
+                        >
+                          Mathematics
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/mech"
                         >
                           Mechanical Engineering
                         </a>
                         <a
-                          className="lg:hover:text-blue-ramaiah lg:cursor-pointer lg:block lg:pb-1"
-                          href="/dept/ml/"
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ml"
                         >
                           Medical Electronics Engg.
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/phy"
+                        >
+                          Physics
                         </a>{" "}
                       </div>
                     </div>{" "}
                   </div>
                   <a
                     href=""
-                    className="p-2"
+                    className="p-2 w-full leading-tight lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah lg:hover:rounded-lg"
                     onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
                       setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setMenuItemClicked(true);
                     }}
                   >
                     Centres of Excellence
                   </a>
                   <a
                     href=""
-                    className="p-2"
+                    className="p-2 w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah lg:hover:rounded-lg"
                     onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
                       setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setMenuItemClicked(true);
                     }}
                   >
-                    Research
+                    Ph.D
                   </a>
                 </div>
               </div>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
-                Facilities
-              </a>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
+              <div className="inline-block relative">
+                <a
+                  className="sm:hover:font-bold p-2 cursor-pointer"
+                  onMouseOver={() => {
+                    setFaciltiesItemClicked(!faciltiesItemClicked);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onClick={() => {
+                    setFaciltiesItemClicked(!faciltiesItemClicked);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  Facilites
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  className={`lg:absolute lg:top-8 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !faciltiesItemClicked ? "lg:hidden" : "lg:flex"
+                  }`}
+                >
+                  <a
+                    href="/facilities/library"
+                    className="p-2  w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg    "
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Library
+                  </a>
+                  <a
+                    href="/facilities/hostel"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Hostel
+                  </a>
+                  <a
+                    href="/facilities/internet"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Internet Center
+                  </a>
+                  <a
+                    href="/facilities/fitness-center"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Fitness Center
+                  </a>
+                  <a
+                    href="/facilities/others"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Other Facilities
+                  </a>
+                </div>
+              </div>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/exam"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
                 Examination
               </a>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/placement"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
                 Placement
               </a>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
+              <a
+                className="sm:hover:font-bold p-2"
+                href="http://msrit.edu/skill-labs.html"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
                 Skill Labs
               </a>
-              <a className="p-2 hover:font-bold cursor-pointer" href="">
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/contact"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
                 Contact
               </a>
               {/* <div

@@ -6,10 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.3.1",
+    "daisyui": "^1.21.0",
     "embla-carousel-autoplay": "^6.0.2",
     "embla-carousel-react": "^6.0.2",
     "jquery": "^3.6.0",
     "next": "^12.0.7",
+    "nodemailer": "^6.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-image-gallery": "^1.2.7",

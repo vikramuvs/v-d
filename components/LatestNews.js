@@ -101,7 +101,7 @@ function LatestNews({ data }) {
             {data.map((item, i) => (
               <div
                 key={i}
-                className="w-full shadow-md rounded-md border-2 border-blue-ramaiah p-2 mb-2 flex space-x-2 items-start"
+                className="w-full shadow-md rounded-md border-[0.5px] border-blue-ramaiah p-2 mb-2 flex space-x-2 items-start hover:bg-gray-100"
               >
                 <div className="w-[15%] mr-2 bg-gradient-to-b from-orange-ramaiah to-pink-ramaiah text-white flex flex-col space-y-1 text-center rounded-md">
                   <div className="font-bold font-heading text-xl">
