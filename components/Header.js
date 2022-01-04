@@ -16,7 +16,7 @@ export default function Header() {
             <div className="col-start-2 col-end-12 bg-blue-ramaiah">
               <div className="flex flex-row justify-between items-center content-center">
                 <div className="hidden lg:inline-block lg:h-5/6 lg:w-auto ">
-                  <a href="/home">
+                  <a href="/">
                     <img
                       src="/Institute-of-Technology-transparent-bkg.png"
                       alt="Logo"
@@ -26,7 +26,7 @@ export default function Header() {
                   </a>
                 </div>
                 <div className="h-20 w-[10rem] lg:hidden relative">
-                  <a href="/home">
+                  <a href="/">
                     <Image
                       src={logo}
                       alt="Logo"
