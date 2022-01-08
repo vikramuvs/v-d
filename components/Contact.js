@@ -7,15 +7,15 @@ export default function ContactUs() {
   const msgRef = useRef(null);
   const form = useRef();
 
-  const obj = {
-    to_name: "Website Admin",
-    from_name: nameRef.current.value,
-    message: msgRef.current.value,
-    reply_to: fromRef.current.value,
-  };
-
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const obj = {
+      to_name: "Website Admin",
+      from_name: nameRef.current.value,
+      message: msgRef.current.value,
+      reply_to: fromRef.current.value,
+    };
 
     emailjs
       .send(
