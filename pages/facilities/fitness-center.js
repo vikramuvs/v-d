@@ -18,6 +18,7 @@ function fitness_center({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"FACILITIES - FITNESS CENTER"}
+          bkg="bg-gym bg-gray-deptHeader bg-blend-overlay bg-cover bg-right"
         />
         <DeptStats stats={deptStats} />
         <FacilitiesGym />

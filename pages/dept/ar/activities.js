@@ -31,6 +31,7 @@ function activities({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="SCHOOL OF ARCHITECTURE"
+          bkg="bg-arch bg-[#C0C0C0] bg-blend-overlay"
         />
         <DeptStats stats={deptStats} />
         <ActivitiesContent

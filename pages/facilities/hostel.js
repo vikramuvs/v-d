@@ -18,6 +18,7 @@ function hostel({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"FACILITIES - HOSTEL"}
+          bkg="bg-hostel bg-gray-deptHeader bg-blend-overlay bg-cover bg-bottom"
         />
         <DeptStats stats={deptStats} />
         <FacilitiesHostel />

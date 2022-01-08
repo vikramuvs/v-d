@@ -18,6 +18,7 @@ function qip({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"QIP CENTER"}
+          bkg="bg-admission bg-[#A2A2A2] bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <Qip />

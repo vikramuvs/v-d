@@ -18,6 +18,7 @@ function deca({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DECA"}
+          bkg="bg-deca bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Deca />

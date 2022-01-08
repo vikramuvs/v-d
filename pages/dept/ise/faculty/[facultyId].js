@@ -136,6 +136,7 @@ function deptFaculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF INFORMATION SCIENCE & ENGINEERING"
+          bkg="bg-ise bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         {/* <FacultyMainContent

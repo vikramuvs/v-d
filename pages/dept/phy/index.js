@@ -32,6 +32,7 @@ export default function phyIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF PHYSICS"}
+          bkg="bg-phy bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Phy

@@ -18,6 +18,7 @@ function internet({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"FACILITIES - INTERNET"}
+          bkg="bg-internet bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <FacilitiesInternet />

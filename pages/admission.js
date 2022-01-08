@@ -28,6 +28,7 @@ function admissions({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"ADMISSIONS"}
+          bkg="bg-admission bg-[#C0C0C0] bg-blend-overlay bg-center bg-cover"
         />
         <DeptStats stats={deptStats} />
         <Admissions />

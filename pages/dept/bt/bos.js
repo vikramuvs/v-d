@@ -18,6 +18,7 @@ function bos({ bos, boe, sy, tt, sm, latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF BIOTECHNOLOGY"
+          bkg="bg-bt bg-gray-deptHeader bg-blend-overlay"
         />
         <DeptStats stats={deptStats} />
         <BosMainContent

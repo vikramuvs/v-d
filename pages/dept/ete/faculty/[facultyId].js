@@ -136,6 +136,7 @@ function deptFaculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF ELECTRONICS & TELECOMMUNICATIONS ENGG."
+          bkg="bg-ete bg-right"
         />
         <DeptStats stats={deptStats} />
         {/* <FacultyMainContent

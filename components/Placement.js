@@ -381,7 +381,7 @@ function Placement({}) {
               </div>
               <div className="text-right">
                 Tel - 080 2360 4979 <br />
-                Email - admn[at]msrit[dot]edu <br />
+                Email - placement[at]msrit[dot]edu <br />
                 Alternate Email - ranidrsavitha[at]gmail[dot]com
               </div>
             </div>

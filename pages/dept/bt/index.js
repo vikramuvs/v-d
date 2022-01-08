@@ -32,6 +32,7 @@ export default function btIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF BIOTECHNOLOGY"}
+          bkg="bg-bt bg-gray-deptHeader bg-blend-overlay"
         />
         <DeptStats stats={deptStats} />
         <Bt

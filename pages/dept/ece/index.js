@@ -32,6 +32,7 @@ export default function eceIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF ELECTRONICS & COMMUNICATIONS ENGG."}
+          bkg="bg-ece bg-gray-deptHeader bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <Ece

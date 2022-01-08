@@ -17,7 +17,8 @@ function proctorial_system({ latestNews, latestEvents, deptStats }) {
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}
-          deptName={"QIP CENTER"}
+          deptName={"PROCTORIAL SYSTEM"}
+          bkg="bg-proctor bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <ProctorialSystem />

@@ -26,6 +26,7 @@ function deptFaculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF ELECTRONICS & INSTRUMENTATION ENGG."
+          bkg="bg-eie bg-[#EAEAEA] bg-blend-overlay bg-cover bg-center"
         />
         <DeptStats stats={deptStats} />
         <FacultyMainContent

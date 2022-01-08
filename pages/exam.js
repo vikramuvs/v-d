@@ -18,6 +18,7 @@ function exam({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"EXAMINATIONS"}
+          bkg={"bg-exam bg-[#C0C0C0] bg-blend-overlay "}
         />
         <DeptStats stats={deptStats} />
         <Examination />

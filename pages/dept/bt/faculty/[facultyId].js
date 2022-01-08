@@ -135,6 +135,7 @@ function deptFaculty({
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}
+          bkg="bg-bt bg-gray-deptHeader bg-blend-overlay"
           deptName="DEPARTMENT OF BIOTECHNOLOGY"
         />
         <DeptStats stats={deptStats} />

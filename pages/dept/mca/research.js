@@ -26,6 +26,7 @@ function faculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF COMPUTER APPLICATIONS"
+          bkg="bg-mca bg-gray-deptHeader bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <ResearchMainContent

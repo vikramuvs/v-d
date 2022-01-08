@@ -32,6 +32,7 @@ export default function iseIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF INFORMATION SCIENCE & ENGG."}
+          bkg="bg-ise bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Ise

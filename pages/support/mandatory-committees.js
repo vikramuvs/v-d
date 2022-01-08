@@ -18,6 +18,7 @@ function mandatory_committees({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"MANDATORY COMMITTEES"}
+          bkg="bg-about bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <MadatoryCommittee />

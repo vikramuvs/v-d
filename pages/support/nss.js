@@ -18,6 +18,7 @@ function nss({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"NSS"}
+          bkg="bg-nss bg-gray-deptHeader bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <Nss />

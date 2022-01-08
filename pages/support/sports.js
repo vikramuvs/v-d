@@ -17,7 +17,8 @@ function sports({ latestNews, latestEvents, deptStats }) {
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}
-          deptName={"QIP CENTER"}
+          deptName={"SPORTS"}
+          bkg="bg-sports bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Sports />

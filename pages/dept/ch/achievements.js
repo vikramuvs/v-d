@@ -24,7 +24,12 @@ function achievements({
       </Head>
       <div className="font-body">
         <Header />
-        <DeptBanner latestNews={latestNews} latestEvents={latestEvents} />
+        <DeptBanner
+          latestNews={latestNews}
+          latestEvents={latestEvents}
+          deptName="DEPARTMENT OF CHEMICAL ENGG."
+          bkg="bg-chem bg-[#C0C0C0] bg-blend-overlay bg-center"
+        />
         <DeptStats stats={deptStats} />
         <AchievementsContent
           st_achieve={stu_achievements}

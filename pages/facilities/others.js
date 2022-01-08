@@ -17,7 +17,8 @@ function others({ latestNews, latestEvents, deptStats }) {
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}
-          deptName={"FACILITIES - FITNESS CENTER"}
+          deptName={"FACILITIES - OTHERS"}
+          bkg="bg-other_facilities bg-[#C2C2C2] bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <FacilitiesOthers />

@@ -28,6 +28,7 @@ function activities({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF CHEMICAL ENGINEERING"
+          bkg="bg-chem bg-[#C0C0C0] bg-blend-overlay bg-center"
         />
         <DeptStats stats={deptStats} />
         <ActivitiesContent

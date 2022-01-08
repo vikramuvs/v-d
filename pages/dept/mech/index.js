@@ -32,6 +32,7 @@ export default function mechIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF MECHANICAL ENGG."}
+          bkg="bg-mech bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Mech

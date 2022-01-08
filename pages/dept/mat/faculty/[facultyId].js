@@ -136,6 +136,7 @@ function deptFaculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF MATHEMATICS"
+          bkg="bg-mat bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         {/* <FacultyMainContent

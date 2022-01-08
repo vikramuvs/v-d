@@ -32,6 +32,7 @@ export default function mbaIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF MBA"}
+          bkg="bg-mba bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Mba

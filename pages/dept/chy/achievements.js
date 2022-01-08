@@ -28,6 +28,7 @@ function achievements({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF CHEMISTRY"
+          bkg="bg-chy bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <AchievementsContent

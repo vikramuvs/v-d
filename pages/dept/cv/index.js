@@ -32,6 +32,7 @@ export default function cvIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF CIVIL ENGG."}
+          bkg="bg-cv bg-gray-deptHeader bg-blend-overlay bg-cover bg-center"
         />
         <DeptStats stats={deptStats} />
         <Cv

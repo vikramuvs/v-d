@@ -32,6 +32,7 @@ export default function eeeIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF ELECTRICAL & ELECTRONICS ENGG."}
+          bkg="bg-eee bg-gray-deptHeader bg-blend-overlay bg-cover bg-right"
         />
         <DeptStats stats={deptStats} />
         <Eee

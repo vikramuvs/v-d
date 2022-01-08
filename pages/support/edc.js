@@ -18,6 +18,7 @@ function edc({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"EDC"}
+          bkg="bg-edc bg-gray-deptHeader bg-blend-overlay bg-cover"
         />
         <DeptStats stats={deptStats} />
         <CompEdc />

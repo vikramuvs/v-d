@@ -18,6 +18,7 @@ function placement({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"PLACEMENTS"}
+          bkg="bg-placement bg-gray-deptHeader bg-blend-overlay bg-right"
         />
         <DeptStats stats={deptStats} />
         <Placement />

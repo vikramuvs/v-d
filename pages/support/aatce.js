@@ -18,6 +18,7 @@ function aatce({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"AATCE"}
+          bkg="bg-aatce bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Aatce />

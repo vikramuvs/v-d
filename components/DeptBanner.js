@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
+import { extractProps } from "react-magnific-popup/lib/utils";
 import ReactTextTransition, { presets } from "react-text-transition";
 
-export default function DeptBanner({ latestNews, latestEvents, deptName }) {
+export default function DeptBanner({
+  latestNews,
+  latestEvents,
+  deptName,
+  bkg,
+}) {
   const [latestNewsState, setLatestNewsState] = useState(latestNews);
   const [latestEventsState, setLatestEventsState] = useState(latestEvents);
   const [lnDatesState, setLnDatesState] = useState([]);
@@ -64,7 +70,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
         };
       }),
     ]);
-    console.log(lnUrlState);
+    // console.log(lnUrlState);
     // (
     //   <>
     //     <span key={i} className="font-heading lg:text-2xl">
@@ -81,7 +87,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
   }
 
   function doLatestEvents(latestEventsObj) {
-    console.log(latestEventsObj);
+    //  console.log(latestEventsObj);
     setLeTextState([
       ...latestEventsObj?.map((eventItem, i) => {
         return eventItem.title;
@@ -111,7 +117,7 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
         };
       }),
     ]);
-    console.log(leDatesState);
+    //  console.log(leDatesState);
     // (
     //   <>
     //     <span key={i} className="font-heading lg:text-2xl">
@@ -172,7 +178,9 @@ export default function DeptBanner({ latestNews, latestEvents, deptName }) {
       <div className="grid gap-5 grid-cols-12 h-auto lg:h-auto">
         <div className="col-start-1 col-end-13 bg-gray-deptHeader min-h-full">
           <div className="grid gap-5 grid-cols-12 min-h-full">
-            <div className="col-span-full lg:col-start-2 lg:col-end-7 bg-bt bg-cover text-center sm:text-2xl font-bold flex">
+            <div
+              className={`col-span-full lg:col-start-2 lg:col-end-7 bg-cover text-center sm:text-2xl font-bold flex ${bkg} `}
+            >
               <div className="m-auto font-heading lg:text-3xl text-blue-ramaiah">
                 {dep1.toString().includes("DEPARTMENT") ? (
                   <>

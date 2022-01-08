@@ -28,6 +28,7 @@ function activities({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF MECHANICAL ENGINEERING"
+          bkg="bg-mech bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <ActivitiesContent

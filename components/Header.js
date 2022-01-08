@@ -266,7 +266,7 @@ export default function Header() {
                             setDeptItemClicked(false);
                             setAboutItemClicked(false);
                           }}
-                          className={`lg:absolute lg:left-[104%] lg:top-0 lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
+                          className={`lg:absolute lg:left-[104%] lg:top-0 lg:max-h-[300px] lg:overflow-y-scroll lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
                             !deptItemClicked ? "lg:hidden" : "lg:flex"
                           }`}
                         >
@@ -301,6 +301,12 @@ export default function Header() {
                               href="/dept/ch"
                             >
                               Chemical Engineering
+                            </a>
+                            <a
+                              className=" cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              href="/dept/chy"
+                            >
+                              Chemistry
                             </a>
                             <a
                               className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
@@ -356,6 +362,12 @@ export default function Header() {
                             </a>{" "}
                             <a
                               className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              href="/dept/hss"
+                            >
+                              Humanities
+                            </a>{" "}
+                            <a
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/iem"
                             >
                               Industrial Engineering & Mgmt
@@ -368,6 +380,12 @@ export default function Header() {
                             </a>{" "}
                             <a
                               className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              href="/dept/mat"
+                            >
+                              Mathematics
+                            </a>{" "}
+                            <a
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
                               href="/dept/mech"
                             >
                               Mechanical Engineering
@@ -377,6 +395,12 @@ export default function Header() {
                               href="/dept/ml"
                             >
                               Medical Electronics Engg.
+                            </a>{" "}
+                            <a
+                              className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                              href="/dept/phy"
+                            >
+                              Physics
                             </a>{" "}
                           </div>
                         </div>{" "}

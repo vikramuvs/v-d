@@ -17,7 +17,8 @@ function governance({ latestNews, latestEvents, deptStats }) {
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}
-          deptName={"ABOUT US"}
+          deptName={"GOVERNANCE"}
+          bkg="bg-about bg-[#C1C1C1] bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Governance />

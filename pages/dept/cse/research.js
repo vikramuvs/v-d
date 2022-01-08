@@ -26,6 +26,7 @@ function faculty({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF COMPUTER SCIENCE & ENGG."
+          bkg="bg-cse bg-gray-deptHeader bg-blend-overlay bg-cover bg-right"
         />
         <DeptStats stats={deptStats} />
         <ResearchMainContent

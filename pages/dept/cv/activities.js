@@ -28,6 +28,7 @@ function activities({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName="DEPARTMENT OF CIVIL ENGINEERING"
+          bkg="bg-cv bg-gray-deptHeader bg-blend-overlay bg-cover bg-center"
         />
         <DeptStats stats={deptStats} />
         <ActivitiesContent

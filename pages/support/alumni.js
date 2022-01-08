@@ -18,6 +18,7 @@ function alumni({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"ALUMNI"}
+          bkg="bg-alumni bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <Alumni />

@@ -32,6 +32,7 @@ export default function hssIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF HUMANITIES"}
+          bkg="bg-hss bg-gray-deptHeader bg-blend-overlay bg-cover bg-center"
         />
         <DeptStats stats={deptStats} />
         <Hss

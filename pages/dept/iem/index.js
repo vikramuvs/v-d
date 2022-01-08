@@ -32,6 +32,7 @@ export default function iemIndex({
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"DEPARTMENT OF INDUSTRIAL ENGG. & MGMT."}
+          bkg="bg-iem bg-[#D1D1D1] bg-blend-overlay bg-cover bg-center"
         />
         <DeptStats stats={deptStats} />
         <Iem

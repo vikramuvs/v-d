@@ -18,6 +18,7 @@ function about({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"ABOUT US"}
+          bkg="bg-about bg-[#C1C1C1] bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <About />

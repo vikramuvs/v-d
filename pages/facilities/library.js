@@ -18,6 +18,7 @@ function library({ latestNews, latestEvents, deptStats }) {
           latestNews={latestNews}
           latestEvents={latestEvents}
           deptName={"FACILITIES - LIBRARY"}
+          bkg="bg-lib bg-gray-deptHeader bg-blend-overlay bg-left"
         />
         <DeptStats stats={deptStats} />
         <FacilitiesLibrary />
