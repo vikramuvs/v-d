@@ -176,12 +176,12 @@ export default function DeptBanner({
   return (
     <>
       <div className="grid gap-5 grid-cols-12 h-auto lg:h-auto">
-        <div className="col-start-1 col-end-13 bg-gray-deptHeader min-h-full">
+        <div className="col-start-1 col-end-13 min-h-full">
           <div className="grid gap-5 grid-cols-12 min-h-full">
             <div
-              className={`col-span-full lg:col-start-2 lg:col-end-7 bg-cover text-center sm:text-2xl font-bold flex ${bkg} `}
+              className={`col-start-2 col-span-10 lg:col-start-2 lg:col-end-7 bg-cover rounded-lg text-center sm:text-2xl font-bold flex ${bkg} `}
             >
-              <div className="m-auto font-heading lg:text-3xl text-blue-ramaiah">
+              <div className="m-auto h-20 md:h-auto font-heading lg:text-3xl text-blue-ramaiah inline-flex items-center">
                 {dep1.toString().includes("DEPARTMENT") ? (
                   <>
                     {" "}
@@ -193,9 +193,12 @@ export default function DeptBanner({
                 )}
               </div>
             </div>
-            <div className="col-span-12 lg:col-start-7 lg:col-end-12 inline-flex text-center text-blue-ramaiah pb-2">
-              <div className="w-1/2 lg:w-1/2 lg:mr-2">
-                <span className="text-xl font-heading ">LATEST NEWS</span>
+            <div className="col-start-2 col-span-10 lg:col-start-7 lg:col-end-12 inline-flex flex-col md:flex-row text-center text-blue-ramaiah pb-2">
+              <div className="w-full lg:w-1/2 lg:mr-2">
+                {/* <div className="w-1/2 lg:w-1/2 lg:mr-2"> */}
+                <span className="text-lg md:text-xl font-heading ">
+                  LATEST NEWS
+                </span>
                 <div className="bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah text-white rounded-t-md">
                   {/* {latestNews?.map((newsItem, i) => {
                     return (
@@ -227,7 +230,7 @@ export default function DeptBanner({
                     />
                   </p>
                 </div>
-                <div className="border-b-[1px] border-l-[1px] border-r-[1px] border-gray-500 bg-white rounded-b-md ">
+                <div className="shadow-lg bg-white rounded-b-md ">
                   {/* {latestNews?.map((newsItem, i) => {
                     return (
                       <div key={i}>
@@ -235,7 +238,7 @@ export default function DeptBanner({
                       </div>
                     );
                   })} */}
-                  <div className="lg:h-[100px] truncate">
+                  <div className="h-[70px] lg:h-[100px] truncate text-sm md:text-base text-center">
                     <a
                       href={lnUrlState[newsIndex] ? lnUrlState[newsIndex] : ""}
                       target="_blank"
@@ -250,8 +253,11 @@ export default function DeptBanner({
                   </div>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/2">
-                <span className="text-xl font-heading">LATEST EVENTS</span>
+              {/* <div className="w-1/2 lg:w-1/2"> */}
+              <div className="w-full lg:w-1/2">
+                <span className="text-lg md:text-xl  font-heading">
+                  LATEST EVENTS
+                </span>
                 <div className="bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah text-white rounded-t-md">
                   {/* {latestEvents?.map((eventItem, i) => {
                     return (
@@ -286,7 +292,7 @@ export default function DeptBanner({
                     />
                   </p>
                 </div>
-                <div className="border-b-[1px] border-l-[1px] border-r-[1px] border-gray-500 bg-white rounded-b-md">
+                <div className="shadow-lg bg-white rounded-b-md">
                   {/* {latestEvents?.map((eventItem, i) => {
                     return (
                       <div key={i}>
@@ -294,7 +300,7 @@ export default function DeptBanner({
                       </div>
                     );
                   })} */}
-                  <div className="h-[100px] truncate">
+                  <div className="h-[70px] lg:h-[100px] truncate text-sm md:text-base text-center">
                     <a
                       href={
                         leUrlState[eventsIndex] ? leUrlState[eventsIndex] : ""

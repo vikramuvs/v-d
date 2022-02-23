@@ -35,11 +35,11 @@ export const EmblaCarousel = () => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
-            <img src="right-side.png" />
+            <img src="new-website-banner-scroll.png" />
           </div>
-          <div className="embla__slide">
+          {/* <div className="embla__slide">
             <img src="home-page-banner-2.png" />
-          </div>
+          </div> */}
         </div>
       </div>
       <button

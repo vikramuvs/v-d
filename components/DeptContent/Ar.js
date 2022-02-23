@@ -29,31 +29,31 @@ function Ar({ data, syllabus, timetable, studymaterial, path, history }) {
             </a>
             <a
               href={path + "/faculty"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah  bg-opacity-75 lg:p-2 lg:m-2"
             >
               Faculty
             </a>
             <a
               href={path + "/research"}
-              className="lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="lg:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-opacity-75 lg:p-2 lg:m-2"
             >
               Research
             </a>
             <a
               href={path + "/bos"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah  bg-opacity-75 lg:p-2 lg:m-2"
             >
               BOS|BOE
             </a>
             <a
               href={path + "/achievements"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah  bg-opacity-75 lg:p-2 lg:m-2"
             >
               Achievements
             </a>
             <a
               href={path + "/activities"}
-              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah bg-gray-deptHeader bg-opacity-75 lg:p-2 lg:m-2"
+              className="sm:hover:font-bold lg:hover:text-white lg:hover:bg-gradient-to-r lg:hover:from-orange-ramaiah lg:to-pink-ramaiah  bg-opacity-75 lg:p-2 lg:m-2"
             >
               Activities
             </a>
@@ -61,7 +61,7 @@ function Ar({ data, syllabus, timetable, studymaterial, path, history }) {
         </div>
 
         {/* Dept Main Content*/}
-        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-blue-ramaiah border-gray-100 border-2 bg-white">
+        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-black border-gray-100 border-2 bg-white">
           <div>
             <div className="font-heading text-lg"> VISION</div> <br /> To
             achieve and propagate high standards of excellence in architectural

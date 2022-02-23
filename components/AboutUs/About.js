@@ -51,8 +51,10 @@ export default function About() {
         </div> */}
 
         {/* Dept Main Content*/}
-        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-blue-ramaiah border-gray-100 border-2 bg-white">
-          <div className="text-center font-bold text-xl">ABOUT US</div>
+        <div className="col-span-full m-2 p-2 lg:col-start-2 lg:col-end-12 h-auto text-black border-gray-100 border-2 bg-white">
+          <div className="text-center hidden md:block font-bold text-xl">
+            ABOUT US
+          </div>
           <div className="grid grid-cols-1 gap-3 w-full">
             <div>
               <div className="flex justify-center">
@@ -62,6 +64,9 @@ export default function About() {
                     src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
                     alt=""
                   /> */}
+                  <div className="bg-gradient-to-br md:hidden text-white text-center text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                    VISION
+                  </div>
                   <div className="p-1 flex flex-col justify-start text-justify ">
                     {/* <h5 className="text-gray-900 text-xl font-medium mb-2">
                       VISION
@@ -73,7 +78,7 @@ export default function About() {
                       needs .
                     </p>
                   </div>
-                  <div className="bg-gradient-to-br text-white text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                  <div className="bg-gradient-to-br hidden md:inline-block text-white text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
                     VISION
                   </div>
                 </div>
@@ -87,6 +92,9 @@ export default function About() {
                     src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
                     alt=""
                   /> */}
+                  <div className="bg-gradient-to-br md:hidden text-white text-center text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                    MISSION
+                  </div>
                   <div className="p-1 flex flex-col justify-start text-justify">
                     <p className="text-gray-700 text-base mb-4 p-1">
                       M S Ramaiah Institute of Technology shall meet the global
@@ -101,7 +109,7 @@ export default function About() {
                       socio-economic needs.
                     </p>
                   </div>
-                  <div className="bg-gradient-to-br text-white text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                  <div className="bg-gradient-to-br hidden md:inline-block text-white text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
                     MISSION
                   </div>
                 </div>
@@ -115,6 +123,10 @@ export default function About() {
                     src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
                     alt=""
                   /> */}
+
+                  <div className="bg-gradient-to-br md:hidden text-white text-center text-xl from-orange-ramaiah to-pink-ramaiah rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                    QUALITY POLICY
+                  </div>
 
                   <div className="p-1 flex flex-col justify-start">
                     <p className="text-gray-700 text-base mb-4 text-justify p-1">
@@ -131,7 +143,7 @@ export default function About() {
                       holders concerned.
                     </p>
                   </div>
-                  <div className="bg-gradient-to-br text-white text-xl from-orange-ramaiah to-pink-ramaiah w-20 rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
+                  <div className="bg-gradient-to-br hidden md:inline-block text-white text-xl from-orange-ramaiah to-pink-ramaiah w-20 rounded-t-lg md:rounded-none md:rounded-r-lg md:vertical md:text-center font-bold">
                     QUALITY POLICY
                   </div>
                 </div>
@@ -150,11 +162,7 @@ export default function About() {
           <div className="container relative mx-auto px-6 flex flex-col space-y-8">
             <div className="absolute z-0 w-[4px] h-full md:mx-auto md:left-0 md:right-0 bg-gradient-to-b from-orange-ramaiah to-pink-ramaiah shadow-md left-17 inset-0 xs:left-17 xs:-mx-0"></div>
             <div className="relative z-10">
-              <img
-                src="https://images.unsplash.com/photo-1639930605762-6dbb721bd568?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
-                alt=""
-                className="timeline-img"
-              />
+              <img src="" alt="" className="timeline-img" />
               <div className="timeline-container">
                 <div aria-hidden="true" className="timeline-pointer"></div>
                 <div className="bg-white p-6 rounded-md shadow-md leading-normal text-justify">

@@ -31,7 +31,7 @@ function Governance() {
   return (
     <>
       {/* Dept Nav Bar */}
-      <div className="grid grid-cols-12 lg:bg-transparent lg:relative font-body">
+      <div className="grid grid-cols-12 lg:bg-transparent lg:relative font-body transition-all duration-500 ease-in-out">
         {/* <div className="col-span-full lg:sticky lg:top-10 place-self-start lg:rounded-lg lg:border-[1px] lg:border-blue-ramaiah  bg-opacity-30 text-blue-ramaiah space-x-3  lg:col-start-2 lg:col-end-4 lg:inline-flex lg:flex-col lg:w-full ">
                     <div className="lg:w-full lg:flex lg:flex-col text-center h-auto">
                       <a
@@ -86,7 +86,7 @@ function Governance() {
                   </div> */}
 
         {/* Dept Main Content*/}
-        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-blue-ramaiah border-gray-100 border-2 bg-white">
+        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-black border-gray-100 border-2 bg-white shadow-lg rounded-md">
           <div className="font-heading text-xl text-center mb-2" id="qip">
             {" "}
             GOVERNANCE AT RIT
@@ -133,7 +133,7 @@ function Governance() {
             </p>{" "}
             <br />
             <div className="font-heading text-lg"> TRUSTEES</div> <br />
-            <div className="flex flex-row flex-wrap space-x-3 justify-between">
+            <div className="flex flex-col md:flex-row flex-wrap justify-between">
               <div className="leading-tight">
                 <img src="../../mrj.jpg" />
                 <br />
@@ -233,7 +233,7 @@ function Governance() {
             </div>
             <br />
             <div className="font-heading text-lg"> LEADERSHIP</div> <br />
-            <div className="flex flex-row flex-wrap space-x-8 justify-start">
+            <div className="flex flex-row flex-wrap justify-between">
               <div className="leading-tight">
                 <img src="../../razdan.jpg" className="w-[250px] h-[180px]" />
                 <br />
@@ -340,7 +340,7 @@ function Governance() {
           id="my-modal"
           ref={mrjRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -364,7 +364,7 @@ function Governance() {
                     Close
                   </p>
                 </div>
-                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                <div className="flex flex-row flex-wrap items-start justify-center md:space-x-5">
                   <div>
                     <img src="../../mrj.jpg" />
                   </div>
@@ -459,7 +459,7 @@ function Governance() {
           id="my-modal"
           ref={mrsRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -483,7 +483,7 @@ function Governance() {
                     Close
                   </p>
                 </div>
-                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                <div className="flex flex-row flex-wrap items-start justify-center md:space-x-5">
                   <div>
                     <img src="../../mrs.jpg" />
                   </div>
@@ -557,7 +557,7 @@ function Governance() {
           id="my-modal"
           ref={mrrRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -581,7 +581,7 @@ function Governance() {
                     Close
                   </p>
                 </div>
-                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                <div className="flex flex-row flex-wrap items-start justify-center md:space-x-5">
                   <div>
                     <img src="../../mrr.jpg" />
                   </div>
@@ -652,7 +652,7 @@ function Governance() {
           id="my-modal"
           ref={ceRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -676,7 +676,7 @@ function Governance() {
                     Close
                   </p>
                 </div>
-                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                <div className="flex flex-row flex-wrap items-start justify-center md:space-x-5">
                   <div>
                     <img
                       src="../../new-ce.jpg"
@@ -816,7 +816,7 @@ function Governance() {
           id="my-modal"
           ref={nvrRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -946,7 +946,7 @@ function Governance() {
           id="my-modal"
           ref={rajRef}
         >
-          <div className="relative top-10 mx-auto p-5 border w-[65%] shadow-lg rounded-md bg-white">
+          <div className="relative top-10 mx-auto p-5 border w-[95%] md:w-[65%] shadow-lg rounded-md bg-white">
             <div className="mt-3 text-center">
               {/* <div className="items-end px-4 py-3">
                       <button
@@ -970,7 +970,7 @@ function Governance() {
                     Close
                   </p>
                 </div>
-                <div className="flex flex-row flex-wrap items-start justify-center space-x-5">
+                <div className="flex flex-row flex-wrap items-start justify-center md:space-x-5">
                   <div>
                     <img src="../../razdan.jpg" />
                   </div>

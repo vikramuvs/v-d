@@ -103,7 +103,8 @@ function HomePage({ latestNews, latestEvents }) {
               </div>
             </div>
           </div> */}
-          <div className="col-span-6 bg-homeBanner bg-gray-homeBannerGray bg-no-repeat bg-cover bg-top bg-blend-luminosity flex flex-col h-[100vh]">
+
+          <div className="col-span-full lg:col-span-6 bg-homeBanner bg-gray-homeBannerGray bg-no-repeat bg-cover bg-top bg-blend-luminosity flex flex-col h-[100vh]">
             <div className="h-[25%] flex-shrink"></div>
             <div className="h-[35%] flex-grow"></div>
             <div className="h-[40%] flex-grow">
@@ -220,32 +221,8 @@ function HomePage({ latestNews, latestEvents }) {
               </div>
             </div>
           </div>
-          {/* right-half-div */}
-          {/* <div className="col-span-6 bg-blue-ramaiah grid grid-rows-3">
-            <div></div>
 
-            <div className="text-7xl text-white font-semibold leading-[1.125]">
-              Open your world to{" "}
-              <span className="text-orange-ramaiah border-orange-ramaiah border-b-[1px]">
-                OPPORTUNITIES
-              </span>{" "}
-              <br />
-              with us
-            </div>
-
-            <div className="space-y-3">
-              <div className="flex flex-row justify-evenly flex-wrap border-[1px] border-gray-500">
-                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
-                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
-                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
-              </div>
-              <div className="flex flex-row justify-evenly flex-wrap">
-                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
-                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
-              </div>
-            </div>
-          </div> */}
-          <div className="col-span-6 h-full">
+          <div className="col-span-full lg:col-span-6 h-full">
             <EmblaCarousel />
             {/* <Carousel
               plugins={[
@@ -348,10 +325,138 @@ function HomePage({ latestNews, latestEvents }) {
               </div>
             </div> */}
           </div>
+          {/* right-half-div */}
+          {/* <div className="col-span-6 bg-blue-ramaiah grid grid-rows-3">
+            <div></div>
+
+            <div className="text-7xl text-white font-semibold leading-[1.125]">
+              Open your world to{" "}
+              <span className="text-orange-ramaiah border-orange-ramaiah border-b-[1px]">
+                OPPORTUNITIES
+              </span>{" "}
+              <br />
+              with us
+            </div>
+
+            <div className="space-y-3">
+              <div className="flex flex-row justify-evenly flex-wrap border-[1px] border-gray-500">
+                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
+                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
+                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
+              </div>
+              <div className="flex flex-row justify-evenly flex-wrap">
+                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
+                <div className="h-40 w-40 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center"></div>
+              </div>
+            </div>
+          </div> */}
+          {/* <div className="col-span-6 h-full">
+            <EmblaCarousel /> */}
+          {/* <Carousel
+              plugins={[
+                "infinite",
+                {
+                  options: {
+                    interval: 2000,
+                  },
+                },
+              ]}
+              animationSpeed={1000}
+            >
+              <img src="right-side.png" />
+              <img src="home-page-banner-2.png" />
+            </Carousel> */}
+
+          {/* <CarouselProvider
+              naturalSlideWidth={100}
+              naturalSlideHeight={101}
+              totalSlides={2}
+              className="max-h-full"
+            >
+              <Slider>
+                <Slide index={0}>
+                  <img src="right-side.png" className="h-full w-full" />
+                </Slide>
+                <Slide index={1}>
+                  <img src="home-page-banner-2.png" className="h-full w-full" />
+                </Slide>
+              </Slider>
+              <Dot slide={0}> . </Dot>
+              <Dot slide={1}> . </Dot>
+            </CarouselProvider> */}
+
+          {/* <div className="h-[25%] flex-shrink"></div>
+            <div className="h-[35%] flex-grow">
+              <div className="text-7xl text-white font-semibold leading-[1.125]">
+                Open your world to{" "}
+                <span className="text-orange-ramaiah border-orange-ramaiah border-b-[1px]">
+                 {
+                    <Typical
+                      steps={[
+                        "OPPORTUNITIES",
+                        10000,
+                        "TECHNOLOGY",
+                        10000,
+                        "INNOVATION",
+                        10000,
+                      ]}
+                      wrapper="p"
+                      loop={Infinity}
+                    />
+                  } 
+                </span>{" "}
+                <br />
+                with us
+              </div>
+            </div>
+            <div className="h-[40%] flex-grow">
+              <div className="space-y-5">
+                <div className="flex flex-row justify-evenly flex-wrap">
+                  <div className="h-auto w-auto mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center p-3">
+                    <div className="text-5xl font-heading p-3">
+                      65
+                      <sup className="font-thin after:content-['th'] after:text-white after:text-3xl"></sup>
+                    </div>
+                    <div>
+                      All India Rank <br />
+                      (2021)
+                    </div>
+                  </div>
+                  <div className="h-auto w-auto mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center p-1">
+                    <div className="text-5xl font-heading p-3">Best</div>
+                    <div>
+                      among VTU <br /> institutions
+                    </div>
+                  </div>
+                  <div className="h-auto w-auto mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center p-2">
+                    <div className="text-5xl font-heading p-3">46</div>
+                    <div>
+                      Industrial <br /> Collaborations
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-evenly flex-wrap">
+                  <div className="h-auto w-auto bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center py-2">
+                    <div className="text-5xl font-heading p-3">95%</div>
+                    <div>
+                      Placement <br /> Average
+                    </div>
+                  </div>
+                  <div className="h-30 w-30 mr-12 bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah border-[1px] border-white rounded-lg text-white text-center p-2">
+                    <div className="text-5xl font-heading p-3">350</div>
+                    <div>
+                      Avg. Publications <br />
+                      per year
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          {/* </div> */}
         </div>
 
-        <section className="min-w-[80%] flex items-center p-2 justify-between bg-transparent z-10 absolute top-0 left-[10%]">
-          <div className="relative lg:w-[300px] lg:h-[100px]">
+        <div className="absolute top-0 left-[10%] bg-transparent min-w-[80%] flex items-center p-2 justify-between z-11 lg:hidden">
+          {/* <div className="relative lg:w-[300px] lg:h-[100px]">
             <a href="/home">
               <img
                 src="../Institute-of-Technology.png"
@@ -359,9 +464,618 @@ function HomePage({ latestNews, latestEvents }) {
                 className="absolute h-full w-full"
               />
             </a>
+          </div> */}
+          {/* <div className="relative lg:w-[300px] lg:h-[100px]">
+            <a href="/home">
+              <img
+                src="../Institute-of-Technology.png"
+                alt="Logo"
+                className="absolute h-full w-full"
+              />
+            </a>
+          </div> */}
+          {/* <div className="w-[200px] h-[75px]">
+            <a href="/home">
+              <img
+                src="../Institute-of-Technology.png"
+                alt="Logo"
+                className="h-full w-full"
+              />
+            </a>
           </div>
+
+          <div className="text-xl h-auto w-auto text-white lg:hidden cursor-pointer">
+            <input
+              type={"checkbox"}
+              id="chk-mob-menu"
+              defaultChecked={false}
+              hidden
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div> */}
+
+          <div className="text-white">
+            <div
+              className="space-x-4 rounded-md bg-gray-menu bg-opacity-50 p-2 box-border"
+              hidden
+            >
+              <div className="inline-block relative">
+                <a
+                  className="sm:hover:font-bold p-2 cursor-pointer"
+                  onMouseOver={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(true);
+                  }}
+                  onClick={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(!aboutItemClicked);
+                  }}
+                >
+                  About Us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  className={`lg:absolute lg:top-8 lg:-left-2 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:rounded-md lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !aboutItemClicked ? "lg:hidden" : "lg:flex"
+                  }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  <a
+                    href="/about"
+                    className="p-2  w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg    "
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Overview
+                  </a>
+                  <a
+                    href="/about#evolution"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Evolution
+                  </a>
+                  <a
+                    href="/about/governance"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Governance
+                  </a>
+
+                  <a
+                    href="/about/other-committees"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setMenuItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(true);
+                    }}
+                  >
+                    Other Committees
+                  </a>
+                </div>
+              </div>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/admission"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+                onClick={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Admissions
+              </a>
+              <div className="inline-block relative">
+                <a
+                  className="sm:hover:font-bold p-2 cursor-pointer"
+                  onMouseOver={() => {
+                    setMenuItemClicked(!menuItemCLicked);
+                    setDeptItemClicked(false);
+                    setFaciltiesItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onClick={() => {
+                    setMenuItemClicked(!menuItemCLicked);
+                    setFaciltiesItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  Academics
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  className={`lg:absolute lg:rounded-md lg:top-8 lg:min-h-[100px] lg:bg-[#7c688d] lg:text-white lg:w-[205px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !menuItemCLicked ? "lg:hidden " : "lg:flex lg:flex-col"
+                  }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onMouseOver={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(true);
+
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  <div className="relative w-[180px]">
+                    <div className="flex flex-row items-center mb-2 w-full">
+                      <div className="w-full flex-grow inline-flex">
+                        <a
+                          className={`p-2 cursor-default min-w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah ${
+                            deptItemClicked
+                              ? "lg:rounded-lg lg:bg-gradient-to-r lg:from-pink-ramaiah "
+                              : " "
+                          } `}
+                          onMouseOver={() => {
+                            setFaciltiesItemClicked(false);
+                            setDeptItemClicked(true);
+                            setAboutItemClicked(false);
+                          }}
+                          onClick={() => {
+                            setFaciltiesItemClicked(false);
+                            setDeptItemClicked(!deptItemClicked);
+                            setAboutItemClicked(false);
+                          }}
+                          onMouseOut={() => {
+                            setFaciltiesItemClicked(false);
+                            setMenuItemClicked(true);
+
+                            setAboutItemClicked(false);
+                          }}
+                        >
+                          Departments{" "}
+                        </a>{" "}
+                      </div>
+                      <div
+                        className="ml-auto"
+                        onMouseOver={() => {
+                          setFaciltiesItemClicked(false);
+                          setDeptItemClicked(true);
+
+                          setAboutItemClicked(false);
+                        }}
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>{" "}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      onMouseOver={() => {
+                        setFaciltiesItemClicked(false);
+                        setMenuItemClicked(true);
+                        setDeptItemClicked(true);
+                        setAboutItemClicked(false);
+                      }}
+                      className={`lg:absolute lg:rounded-md lg:left-[98%] lg:top-0 lg:max-h-[300px] lg:overflow-y-scroll lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
+                        !deptItemClicked ? "lg:hidden" : "lg:flex"
+                      }`}
+                    >
+                      {" "}
+                      <div>
+                        <a
+                          className=" cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ar"
+                        >
+                          Architecture
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="#"
+                        >
+                          Artificial Intelligence & Data Science
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="#"
+                        >
+                          Artificial Intelligence & Machine Learning
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/bt"
+                        >
+                          Biotechnology
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ch"
+                        >
+                          Chemical Engineering
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/chy"
+                        >
+                          Chemistry
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/cv"
+                        >
+                          Civil Engineering
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/cse"
+                        >
+                          Computer Science & Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="#"
+                        >
+                          Computer Science & Engg. (AI & ML)
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="#"
+                        >
+                          Computer Science & Engg. (Cyber Security)
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/eee"
+                        >
+                          Electrical & Electronics Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ece"
+                        >
+                          {" "}
+                          Electronics & Communications Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/eie"
+                        >
+                          {" "}
+                          Electronics & Instrumentation Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ete"
+                        >
+                          Electronics & Telecommunications Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/hss"
+                        >
+                          Humanities
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/iem"
+                        >
+                          Industrial Engineering & Mgmt
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ise"
+                        >
+                          Information Science & Engg.
+                        </a>{" "}
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/mat"
+                        >
+                          Mathematics
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/mech"
+                        >
+                          Mechanical Engineering
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/ml"
+                        >
+                          Medical Electronics Engg.
+                        </a>
+                        <a
+                          className=" lg:cursor-pointer lg:block lg:p-2 hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                          href="/dept/phy"
+                        >
+                          Physics
+                        </a>{" "}
+                      </div>
+                    </div>{" "}
+                  </div>
+                  <a
+                    href=""
+                    className="p-2 w-full leading-tight lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah lg:hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setMenuItemClicked(true);
+                    }}
+                  >
+                    Centres of Excellence
+                  </a>
+                  <a
+                    href=""
+                    className="p-2 w-full lg:hover:bg-gradient-to-r lg:hover:from-pink-ramaiah lg:hover:to-orange-ramaiah lg:hover:rounded-lg"
+                    onMouseOver={() => {
+                      setFaciltiesItemClicked(false);
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setMenuItemClicked(true);
+                    }}
+                  >
+                    Ph.D
+                  </a>
+                </div>
+              </div>
+              <div className="inline-block relative">
+                <a
+                  className="sm:hover:font-bold p-2 cursor-pointer"
+                  onMouseOver={() => {
+                    setFaciltiesItemClicked(!faciltiesItemClicked);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onClick={() => {
+                    setFaciltiesItemClicked(!faciltiesItemClicked);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  Facilites
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <div
+                  className={`lg:absolute lg:rounded-md lg:top-8 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                    !faciltiesItemClicked ? "lg:hidden" : "lg:flex"
+                  }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                >
+                  <a
+                    href="/facilities/library"
+                    className="p-2  w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg    "
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Library
+                  </a>
+                  <a
+                    href="/facilities/hostel"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Hostel
+                  </a>
+                  <a
+                    href="/facilities/internet"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Internet Center
+                  </a>
+                  <a
+                    href="/facilities/fitness-center"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Fitness Center
+                  </a>
+                  <a
+                    href="/facilities/others"
+                    className="p-2 w-full hover:bg-gradient-to-r hover:from-pink-ramaiah hover:to-orange-ramaiah hover:rounded-lg"
+                    onMouseOver={() => {
+                      setDeptItemClicked(false);
+                      setAboutItemClicked(false);
+                      setFaciltiesItemClicked(true);
+                    }}
+                  >
+                    Other Facilities
+                  </a>
+                </div>
+              </div>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/exam"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Examination
+              </a>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/placement"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Placement
+              </a>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="http://msrit.edu/skill-labs.html"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Skill Labs
+              </a>
+              <a
+                className="sm:hover:font-bold p-2"
+                href="/contact"
+                onMouseOver={() => {
+                  setFaciltiesItemClicked(false);
+                  setDeptItemClicked(false);
+                  setMenuItemClicked(false);
+                  setAboutItemClicked(false);
+                }}
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <section className="bg-transparent h-auto lg:min-w-[80%] lg:flex items-center p-2 justify-between z-10 absolute top-0 left-[10%] hidden">
+          {/* <div className="relative lg:w-[300px] lg:h-[100px]">
+            <a href="/home">
+              <img
+                src="../Institute-of-Technology.png"
+                alt="Logo"
+                className="absolute h-full w-full"
+              />
+            </a>
+          </div> */}
+          {/* <div className="relative lg:w-[300px] lg:h-[100px]">
+            <a href="/home">
+              <img
+                src="../Institute-of-Technology.png"
+                alt="Logo"
+                className="absolute h-full w-full"
+              />
+            </a>
+          </div> */}
+
           <div className="text-white justify-end">
-            <nav className="space-x-4 bg-gray-menu bg-opacity-50 p-2 box-border ">
+            <nav className="space-x-4 rounded-md bg-gray-menu bg-opacity-50 p-2 box-border">
               {/* <a
                 className="p-2 border-b-2 border-orange-ramaiah text-blue-ramaiah font-bold"
                 href="home"
@@ -402,7 +1116,7 @@ function HomePage({ latestNews, latestEvents }) {
                 </a>
 
                 <div
-                  className={`lg:absolute lg:top-8 lg:-left-2 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                  className={`lg:absolute lg:top-8 lg:-left-2 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:rounded-md lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
                     !aboutItemClicked ? "lg:hidden" : "lg:flex"
                   }`}
                   onMouseOut={() => {
@@ -523,9 +1237,21 @@ function HomePage({ latestNews, latestEvents }) {
                 </a>
 
                 <div
-                  className={`lg:absolute lg:top-8 lg:min-h-[100px] lg:bg-[#7c688d] lg:text-white lg:w-[205px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                  className={`lg:absolute lg:rounded-md lg:top-8 lg:min-h-[100px] lg:bg-[#7c688d] lg:text-white lg:w-[205px] lg:p-2 lg:pt-0 lg:z-[5] ${
                     !menuItemCLicked ? "lg:hidden " : "lg:flex lg:flex-col"
                   }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
+                  onMouseOver={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(true);
+
+                    setAboutItemClicked(false);
+                  }}
                 >
                   <div className="relative w-[180px]">
                     <div className="flex flex-row items-center mb-2 w-full">
@@ -546,11 +1272,25 @@ function HomePage({ latestNews, latestEvents }) {
                             setDeptItemClicked(!deptItemClicked);
                             setAboutItemClicked(false);
                           }}
+                          onMouseOut={() => {
+                            setFaciltiesItemClicked(false);
+                            setMenuItemClicked(true);
+
+                            setAboutItemClicked(false);
+                          }}
                         >
                           Departments{" "}
                         </a>{" "}
                       </div>
-                      <div className="ml-auto">
+                      <div
+                        className="ml-auto"
+                        onMouseOver={() => {
+                          setFaciltiesItemClicked(false);
+                          setDeptItemClicked(true);
+
+                          setAboutItemClicked(false);
+                        }}
+                      >
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -573,15 +1313,16 @@ function HomePage({ latestNews, latestEvents }) {
                     <div
                       onMouseOver={() => {
                         setFaciltiesItemClicked(false);
+                        setMenuItemClicked(true);
                         setDeptItemClicked(true);
                         setAboutItemClicked(false);
                       }}
-                      onMouseOut={() => {
-                        setFaciltiesItemClicked(false);
-                        setDeptItemClicked(false);
-                        setAboutItemClicked(false);
-                      }}
-                      className={`lg:absolute lg:left-[104%] lg:top-0 lg:max-h-[300px] lg:overflow-y-scroll lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
+                      // onMouseOut={() => {
+                      //   setFaciltiesItemClicked(false);
+                      //   setDeptItemClicked(false);
+                      //   setAboutItemClicked(false);
+                      // }}
+                      className={`lg:absolute lg:rounded-md lg:left-[98%] lg:top-0 lg:max-h-[300px] lg:overflow-y-scroll lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:min-w-[20vw] lg:p-2 lg:pt-0 lg:z-[5] ${
                         !deptItemClicked ? "lg:hidden" : "lg:flex"
                       }`}
                     >
@@ -780,9 +1521,15 @@ function HomePage({ latestNews, latestEvents }) {
                 </a>
 
                 <div
-                  className={`lg:absolute lg:top-8 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
+                  className={`lg:absolute lg:rounded-md lg:top-8 lg:drop-shadow-xl lg:min-h-[100px] lg:bg-[#7c688d] lg:flex-wrap lg:text-white lg:w-[200px] lg:p-2 lg:pt-0 lg:z-[5] ${
                     !faciltiesItemClicked ? "lg:hidden" : "lg:flex"
                   }`}
+                  onMouseOut={() => {
+                    setFaciltiesItemClicked(false);
+                    setMenuItemClicked(false);
+                    setDeptItemClicked(false);
+                    setAboutItemClicked(false);
+                  }}
                 >
                   <a
                     href="/facilities/library"

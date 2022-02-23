@@ -3,7 +3,7 @@ function Admissions({}) {
     <>
       {/* Dept Nav Bar */}
       <div className="grid grid-cols-12 lg:bg-transparent lg:relative font-body">
-        <div className="col-span-full h-8 border-[1px] place-self-start lg:sticky lg:top-10 border-blue-ramaiah rounded-md bg-opacity-30 text-blue-ramaiah space-x-3 mx-auto lg:col-start-2 lg:col-end-4 lg:inline-flex lg:flex-col lg:h-auto lg:w-full">
+        <div className="col-span-full hidden md:block h-8 border-[1px] place-self-start lg:sticky lg:top-10 border-blue-ramaiah rounded-md bg-opacity-30 text-blue-ramaiah space-x-3 mx-auto lg:col-start-2 lg:col-end-4 lg:inline-flex lg:flex-col lg:h-auto lg:w-full">
           <div className="lg:w-full lg:flex lg:flex-col text-center">
             <a
               href="#programs"
@@ -51,7 +51,7 @@ function Admissions({}) {
         </div>
 
         {/* Dept Main Content*/}
-        <div className="col-span-full m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-blue-ramaiah border-gray-100 border-2 bg-white">
+        <div className="col-span-full rounded-md shadow-lg  m-2 p-2 lg:col-start-4 lg:col-end-10 h-auto text-black border-gray-100 border-2 bg-white">
           <div>
             {/* <div className="font-heading text-lg"> VISION</div> <br /> To be a
                 leading Biotechnology Engineering department that imparts quality
@@ -217,6 +217,7 @@ function Admissions({}) {
               <a
                 href="https://RIT-bucket.s3-us-west-2.amazonaws.com/Admissions/RIT_International_Forum.pdf"
                 target="_blank"
+                className="text-blue-ramaiah hover:underline text-bold"
               >
                 Download Prospectus here
               </a>
@@ -278,20 +279,21 @@ function Admissions({}) {
             <a
               href="https://d2e9h3gjmozu47.cloudfront.net/Admissions/MTECH+ELIGIBILITY.jpg"
               target="_blank"
+              className="text-blue-ramaiah font-bold hover:underline hover:font-extrabold"
             >
               CLICK HERE FOR M.TECH / M.ARCH- EQUIVALENCE{" "}
             </a>
             {/* 2 buttons here */}
-            <div className="mt-5 flex flex-row gap-3">
+            <div className="mt-5 flex flex-col md:flex-row md:gap-3">
               <a
-                className="text-white p-3 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold "
+                className="text-white p-3 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold w-full"
                 href="https://msrit-bucket.s3.us-west-2.amazonaws.com/Admissions/CHECK+LIST+2021.pdf"
                 target="_blank"
               >
                 ADMISSION CHECKLIST
               </a>
               <a
-                className="text-white p-3 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold"
+                className="text-white p-3 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold w-full"
                 href="https://msrit-bucket.s3-us-west-2.amazonaws.com/Admissions/CHECK+LIST+2020+A+BISEP.pdf"
                 target="_blank"
               >
@@ -345,23 +347,23 @@ function Admissions({}) {
               APPLICATION FORMS
             </div>{" "}
             <br />
-            <div className="flex flex-row gap-2 mx-auto w-full">
+            <div className="flex flex-col md:flex-row gap-2 mx-auto w-full">
               <a
-                className="text-white p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
+                className="text-white w-full p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
                 href="https://d2e9h3gjmozu47.cloudfront.net/Admissions/UG-Admission.pdf"
                 target="_blank"
               >
                 UG APPLICATION FORM
               </a>
               <a
-                className="text-white p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
+                className="text-white w-full p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
                 href="https://d2e9h3gjmozu47.cloudfront.net/Admissions/PG-Admission.pdf"
                 target="_blank"
               >
                 PG APPLICATION FORM
               </a>
               <a
-                className="text-white p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
+                className="text-white w-full p-3 rounded-[0.25rem] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah font-bold max-w-1/3 text-center shadow-lg"
                 href="https://d2e9h3gjmozu47.cloudfront.net/Admissions/Admission_Form+AMMANNA-1MS15CS400+(1).pdf"
                 target="_blank"
               >
@@ -378,74 +380,74 @@ function Admissions({}) {
             </div>{" "}
             <br />
             <div className="w-full">
-              <div className="flex flex-row flex-wrap gap-3 w-full mx-auto">
+              <div className="flex flex-col md:flex-row flex-wrap justify-around gap-2 w-full mx-auto">
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR BE / B.ARCH NRI STUDENTS FEES STRUCTURE 2020-2021
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR B.E. / B. ARCH PMSSS(J&K), CSAB-NESUT STUDENTS
                   2020-2021
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR MBA / MCA STUDENTS FEE STRUCTURE 2020-2021
                   (MANAGEMENT QUOTA)
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR M.TECH / M.ARCH STUDENTS FEE STRUCTURE 2020-2021
                   (MANAGEMENT QUOTA)
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   2ND YEAR B.E. STUDENTS FEE STRUCTURE 2020-2021 (DCET)
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR M.TECH / M.ARCH STUDENTS FEE STRUCTURE 2020-2021
                   (PGCET QUOTA)
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   1ST YEAR MBA / MCA STUDENTS FEE STRUCTURE 2020-2021 (PGCET
                   QUOTA)
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   HIGHER SEMESTER (UG & PG COURSES) FEES STRUCTURE 2021-22
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   HIGHER SEMESTER (UG & PG COURSES) FEES STRUCTURE 2021-22
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   HIGHER SEMESTER (UG & PG COURSES) FEES STRUCTURE 2021-22
                 </a>
                 <a
-                  className="text-white p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah max-w-[30%]"
+                  className="text-white w-full md:max-w-[30%] text-center hover:underline p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                   href=""
                 >
                   HIGHER SEMESTER (UG & PG COURSES) FEES STRUCTURE 2021-22
@@ -477,15 +479,15 @@ function Admissions({}) {
               <li>Defense Scholarship</li>
               <li>RIT Alumni Scholarship</li>
             </ul>
-            <div className="flex flex-row gap-3 mb-2">
+            <div className="flex flex-col justify-around md:flex-row gap-3 mb-2">
               <a
-                className="text-white max-w-[33%] p-2 font-bold rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
+                className="text-white w-full md:max-w-[33%] text-center hover:underline p-2 font-bold rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                 href=""
               >
                 1ST YEAR BE / B.ARCH STUDENTS 2020-2021 (CET-REGULAR)
               </a>
               <a
-                className="text-white max-w-[33%] font-bold p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
+                className="text-white w-full md:max-w-[33%] text-center hover:underline font-bold p-2 rounded-[0.25rem] shadow-lg border-[1px] lg:border-none bg-gradient-to-r to-orange-ramaiah from-pink-ramaiah"
                 href=""
               >
                 1ST YEAR B.E. / B. ARCH STUDENTS 2020-2021 (CET-SNQ)

@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import DeptStats from "../../components/DeptStats";
 import Footer from "../../components/Footer";
 import About from "../../components/AboutUs/About";
+import NewHeader from "../../components/NewHeader";
 
 function about({ latestNews, latestEvents, deptStats }) {
   return (
@@ -13,7 +14,7 @@ function about({ latestNews, latestEvents, deptStats }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="font-body">
-        <Header />
+        <NewHeader />
         <DeptBanner
           latestNews={latestNews}
           latestEvents={latestEvents}

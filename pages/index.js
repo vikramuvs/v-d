@@ -1,5 +1,7 @@
 import Head from "next/head";
-import HomePage from "../components/HomePage";
+import NewHome from "../components/NewHome";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home({ latestNews, latestEvents }) {
   return (
@@ -7,9 +9,13 @@ export default function Home({ latestNews, latestEvents }) {
       <Head>
         <title>Ramaiah Institute of Technology, Bengaluru - 54</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        ></link> */}
       </Head>
       <div className="font-body">
-        <HomePage latestNews={latestNews} latestEvents={latestEvents} />
+        <NewHome latestNews={latestNews} latestEvents={latestEvents} />
       </div>
     </>
   );

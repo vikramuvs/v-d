@@ -4,6 +4,43 @@
 
 @layer base {
   @font-face {
+    font-family: "Flama Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama Light"), url("../fonts/flama-light.woff2") format("woff");
+  }
+
+  @font-face {
+    font-family: "Flama Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama Regular"),
+      url("../fonts/Flama Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Flama Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama Italic"), url("../fonts/Flama Italic.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Flama Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama Bold Italic"),
+      url("../fonts/Flama Bold Italic.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Flama Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama Bold"), url("../fonts/Flama-Bold.woff") format("woff");
+  }
+
+  @font-face {
     font-family: "Gotham Book";
     font-style: normal;
     font-weight: normal;
@@ -169,13 +206,94 @@
 }
 
 @layer utilities {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Style all font awesome icons */
+
+  .hide-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fa {
+    padding: 2px;
+    font-size: 25px;
+    width: 35px;
+    border-radius: 20%;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #992361;
+    margin: 2px;
+  }
+
+  .fa-r {
+    font-size: 15px;
+    width: 25px;
+  }
+
+  .btn {
+    border-color: #992361;
+    border-width: 1px;
+    /* box-shadow: black 2px 100; */
+  }
+
+  .btn-ghost {
+    border-color: #992361;
+    border: 1px;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    /* opacity: 0.7; */
+    color: white;
+    background: #992361;
+  }
+
+  /* Set a specific color for each brand */
+
+  /* Facebook */
+  .fa-facebook {
+    background: transparent;
+    color: #992361;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background: transparent;
+    color: #992361;
+  }
+
+  .fa-linkedin {
+    background: transparent;
+    color: #992361;
+  }
+
+  .fa-youtube {
+    background: transparent;
+    color: #992361;
+  }
+
   .vertical {
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
+  }
+
+  .dropdown-content li a:hover {
+    background-color: #888888;
   }
 
   .embla {
     overflow: hidden;
     position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0.75rem;
   }
   .embla__container {
     display: flex;
@@ -183,18 +301,23 @@
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
+    height: 100%;
   }
   .embla__slide {
     position: relative;
     flex: 0 0 100%;
+    height: 100%;
+    width: auto;
   }
   .embla__slide > img {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: auto;
+    object-fit: fill;
   }
   .embla__viewport {
     overflow: hidden;
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
   }
 
   .embla__viewport.is-draggable {
@@ -246,6 +369,27 @@
     font-size: 5rem;
     right: 100%;
     @apply mr-2 hidden font-quoto absolute top-0 leading-none;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(157, 29, 89, 1) #c1b3a2;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+      rgba(222, 63, 15, 1),
+      rgba(157, 29, 89, 1)
+    );
+    border-radius: 15rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: #c1b3a2;
   }
 
   @screen sm {

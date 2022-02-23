@@ -1,16 +1,13 @@
 function Footer() {
   return (
     <>
-      <footer className="h-auto bg-blue-ramaiah flex flex-col lg:grid w-full lg:grid-cols-12 lg:gap-5 text-white font-lightBody py-6">
+      <footer className="h-auto bg-white text-blue-ramaiah flex flex-col lg:grid w-full lg:grid-cols-12 lg:gap-5  font-lightBody py-6">
         <div className="col-start-2 col-end-4 w-full h-full content-center hidden lg:grid ">
-          <img
-            className="w-full"
-            src="/Institute-of-Technology-transparent-bkg.png"
-          />
+          <img className="w-full" src="/Institute-of-Technology.png" />
         </div>
         <div className="lg:col-start-4 lg:col-end-6">
           <div className="lg:text-left">
-            <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-white">
+            <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-blue-ramaiah">
               SUPPORTING <br /> SECTIONS
             </span>
           </div>
@@ -146,7 +143,7 @@ function Footer() {
           </div>
         </div>
         <div className="lg:col-start-6 lg:col-end-8">
-          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-white">
+          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-blue-ramaiah">
             FEES <br /> PAYMENT
           </span>
           <div>
@@ -201,7 +198,7 @@ function Footer() {
           </div>
         </div>
         <div className="lg:col-start-8 lg:col-end-10">
-          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-white">
+          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-blue-ramaiah">
             IMPORTANT <br />
             LINKS
           </span>
@@ -346,7 +343,7 @@ function Footer() {
           </div>
         </div>
         <div className="lg:col-start-10 lg:col-end-12">
-          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-white">
+          <span className="font-heading py-4 lg:mb-2 lg:text-xl block border-b-2 border-blue-ramaiah">
             REPORTS & <br /> NOTIFICATIONS
           </span>
           <div>

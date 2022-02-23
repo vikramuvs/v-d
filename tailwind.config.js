@@ -10,6 +10,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
+      gridTemplateRows: {
+        12: "repeat(12, minmax(0,1fr))",
+      },
       inset: {
         17: "68px",
         26: "104px",
@@ -85,11 +88,19 @@ module.exports = {
           homeBannerGray: "rgba(243, 244, 246, .8)",
         },
       },
+      // fontFamily: {
+      //   body: "Gotham Book",
+      //   heading: "Gotham Bold",
+      //   lightBody: "Gotham Book",
+      //   quoto: "Gotham Book Italic",
+      // },
       fontFamily: {
-        body: "Gotham Book",
-        heading: "Gotham Bold",
-        lightBody: "Gotham Book",
-        quoto: "Gotham Book Italic",
+        // body: "Flama Regular",
+        body: "Flama Light",
+        heading: "Flama Bold",
+        book: "Gotham Medium",
+        lightBody: "Flama Regular",
+        quoto: "Flama Italic",
       },
     },
   },
