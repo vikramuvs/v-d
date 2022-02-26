@@ -38,11 +38,11 @@ export default function Header() {
               className="fa fa-youtube"
             ></a>
           </div>
-          <nav className=" max-h-1/2 navbar">
+          <nav className="max-h-1/2 navbar">
             <div class="dropdown dropdown-hover xs:hidden md:inline-block">
               <div
                 tabindex="0"
-                className="m-1 btn bg-white text-pink-ramaiah hover:text-white"
+                className="m-1 btn bg-white text-pink-ramaiah hover:text-blue-ramaiah hover:bg-white"
               >
                 About Us{" "}
                 {/* <svg

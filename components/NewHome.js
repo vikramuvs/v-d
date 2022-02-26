@@ -210,14 +210,14 @@ function NewHome({ latestNews, latestEvents }) {
       <main className="relative antialiased">
         {/* Header */}
 
-        <div className="grid grid-cols-12 grid-rows-12 md:grid-rows-6 z-0 h-[99vh] md:gap-4 gap-3">
-          <header className="col-span-10 flex items-center justify-between col-start-2 shadow-md rounded-b-lg md:-mt-2 row-span-1 max-h-full">
-            <div className="h-full inline-flex items-center">
+        <div className="grid grid-cols-12 grid-rows-12 md:grid-rows-6 z-0 h-[99vh] sm:gap-2 lg:gap-3">
+          <header className="col-span-10 flex items-center justify-between col-start-2 shadow-md rounded-b-lg row-span-1 max-h-full">
+            <div className="max-h-[80%] inline-flex items-center">
               <a href="/">
                 <img
                   src="../Institute-of-Technology.png"
                   alt="Logo"
-                  className="h-[50px] md:h-[100px]"
+                  className="max-h-[80px] w-auto"
                 />
               </a>
             </div>
@@ -585,7 +585,7 @@ function NewHome({ latestNews, latestEvents }) {
 
           <div className="col-start-2 col-span-10 row-span-3 md:col-span-2 md:row-span-3 md:col-start-8 md:row-start-2 bg-white shadow-lg rounded-lg flex flex-col">
             <div className="shadow-inner drop-shadow-lg">
-              <h1 className="bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah font-book text-3xl text-center rounded-t-lg text-white">
+              <h1 className="bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah font-book md:text-xl lg:text-3xl text-center rounded-t-lg text-white">
                 News
               </h1>
             </div>
@@ -675,7 +675,7 @@ function NewHome({ latestNews, latestEvents }) {
 
           <div className="col-start-2 col-span-10 row-span-3 md:col-span-2 md:row-span-3 md:col-start-10 md:row-start-2 shadow-lg bg-white rounded-lg overflow-y-auto flex flex-col">
             <div className="shadow-inner drop-shadow-lg">
-              <h1 className="bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah font-book text-2xl md:text-3xl text-center rounded-t-lg text-white">
+              <h1 className="bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah font-book md:text-xl lg:text-3xl text-center rounded-t-lg text-white">
                 Events
               </h1>
             </div>
@@ -725,23 +725,25 @@ function NewHome({ latestNews, latestEvents }) {
           <div className="hidden md:col-span-2 md:row-span-2 md:col-start-2 md:row-start-5 bg-white shadow-lg rounded-lg md:inline-block">
             <div className="shadow-inner drop-shadow-lg">
               <h1 className="bg-gradient-to-r from-pink-ramaiah to-orange-ramaiah font-book text-3xl text-center rounded-t-lg text-white">
-                &nbsp;
+                Data 2022
               </h1>
             </div>
             {/* <hr></hr> */}
             <div className="h-[90%] grid grid-flow-row grid-cols-2 grid-rows-2 gap-1">
               <div className="flex flex-col items-center">
                 <div>
-                  <h3 className="font-bold text-xl block">Placement</h3>
+                  <h3 className="font-bold text-base lg:text-xl block">
+                    Placement
+                  </h3>
                 </div>
                 <div>
-                  <p className="font-extrabold text-5xl text-center text-pink-ramaiah">
+                  <p className="md:font-bold md:text-xs lg:font-extrabold lg:text-5xl text-center text-pink-ramaiah">
                     {/* 220 */}
-                    <CountUp end={220} duration={3} />
+                    <CountUp end={1397} duration={3} />
                   </p>
-                  <p className="text-center leading-tight">
+                  {/* <p className="text-center leading-tight">
                     students placed from 2022 batch till date
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -752,13 +754,13 @@ function NewHome({ latestNews, latestEvents }) {
                   </h3>
                 </div>
                 <div>
-                  <p className="font-extrabold text-5xl text-center text-pink-ramaiah">
+                  <p className="md:font-bold md:text-xl lg:font-extrabold lg:text-5xl text-center text-pink-ramaiah">
                     {/* 220 */}
                     <CountUp end={341} duration={3.75} />
                   </p>
-                  <p className="text-center leading-tight">
+                  {/* <p className="text-center leading-tight">
                     research papers published in 2021
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -767,13 +769,13 @@ function NewHome({ latestNews, latestEvents }) {
                   <h3 className="font-bold text-xl block">Patents</h3>
                 </div>
                 <div>
-                  <p className="font-extrabold text-5xl text-center text-pink-ramaiah">
+                  <p className="md:font-bold md:text-xl lg:font-extrabold lg:text-5xl text-center text-pink-ramaiah">
                     {/* 220 */}
                     <CountUp end={20} duration={2.5} />
                   </p>
-                  <p className="text-center leading-tight">
+                  {/* <p className="text-center leading-tight">
                     patents in the name of the Institute
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
@@ -784,13 +786,13 @@ function NewHome({ latestNews, latestEvents }) {
                   </h3>
                 </div>
                 <div>
-                  <p className="font-extrabold text-5xl text-center text-pink-ramaiah">
+                  <p className="md:font-bold md:text-xl lg:font-extrabold lg:text-5xl text-center text-pink-ramaiah">
                     {/* 220 */}
                     <CountUp end={2200} duration={4.5} />
                   </p>
-                  <p className="text-center leading-tight">
+                  {/* <p className="text-center leading-tight">
                     students awarded <br />
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

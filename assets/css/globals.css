@@ -288,6 +288,15 @@
     background-color: #888888;
   }
 
+  .btn {
+    border: none;
+  }
+
+  .btn a:hover {
+    background-color: none;
+    color: #361c6a;
+  }
+
   .embla {
     overflow: hidden;
     position: relative;
